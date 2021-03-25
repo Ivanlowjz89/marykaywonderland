@@ -1,0 +1,15 @@
+.videoframe, .appframe, .environment, .portraitblocker{
+  
+  height: 100vh; 
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+
+}
+
+.iframe-fluid {
+  position : absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
