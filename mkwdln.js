@@ -294,7 +294,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote5()
 {
-  console.log(quote5);
+  console.log(auditorium1src);
 $('#quoteImage').attr('src', quote5);
 $('#imageFrame').fadeIn(500);
   
