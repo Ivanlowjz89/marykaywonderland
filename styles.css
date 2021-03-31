@@ -1,4 +1,4 @@
-.videoframe, .appframe, .imageframe, .environment, .portraitblocker{
+.videoframe, .appframe, .imageframe, .environment, .portraitblocker, .menuframe{
   
   height: 100vh; 
   height: calc(var(--vh, 1vh) * 100);
