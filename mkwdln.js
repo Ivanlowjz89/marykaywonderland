@@ -66,7 +66,7 @@ $('#playAudioButton').click(function()
 
 });
 
-$('#playAudioButton').click(function()
+$('#audioBlocker').click(function()
 {
 
   $('#audioBlocker').fadeOut(500);
