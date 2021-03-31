@@ -61,6 +61,8 @@ $('#videoFrame').fadeIn(500);
 
 });
 
+$('#buttonAuditoriumVideo1').click();
+
 $('#buttonAuditoriumVideo2').click(function()
 {	
 
