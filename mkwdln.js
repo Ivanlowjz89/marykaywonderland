@@ -1,4 +1,4 @@
-$(document).ready(function() {
+openQuote1();
 
 $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
@@ -240,7 +240,7 @@ window[data.func].call();
 
 }
 
-});
+
 
 //VH
 let vh = window.innerHeight * 0.01;
