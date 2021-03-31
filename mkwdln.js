@@ -1,5 +1,3 @@
-openQuote5();
-
 $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
 //Set unique ID for videos.
@@ -294,7 +292,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote5()
 {
-  console.log(auditorium1src);
+
 $('#quoteImage').attr('src', quote5);
 $('#imageFrame').fadeIn(500);
   
