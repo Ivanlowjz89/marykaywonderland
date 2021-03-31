@@ -45,6 +45,7 @@ $('#speechBubble').click(function()
 {
   
   $('#speechBubble').fadeOut(500);
+  $('#menuFrame').fadeIn(500);
 
 });
 
@@ -52,7 +53,8 @@ $('#avatarImage').click(function()
 {
   
   $('#speechBubble').fadeOut(500);
-
+  $('#menuFrame').fadeIn(500);
+  
 });
 
 $('#openApp1').click(function()
@@ -219,6 +221,13 @@ $('#closeButtonImage').click(function()
 {	
   
 $('#imageFrame').fadeOut(500);
+
+});
+
+$('#closeButtonMenu').click(function()
+{	
+  
+$('#menuFrame').fadeOut(500);
 
 });
 
