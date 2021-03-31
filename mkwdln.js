@@ -1,4 +1,4 @@
-openQuote1();
+openQuote5();
 
 $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
