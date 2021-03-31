@@ -41,6 +41,7 @@ var quote18 = "images/MK Facts-18.jpg";
 var quote19 = "images/MK Facts-19.jpg";
 var quote20 = "images/MK Facts-20.jpg";
 
+//Avatar
 $('#speechBubble').click(function()
 {
   
@@ -57,6 +58,22 @@ $('#avatarImage').click(function()
   
 });
 
+//Audio
+$('#playAudioButton').click(function()
+{
+
+  $('#audioBlocker').fadeOut(500);
+
+});
+
+$('#playAudioButton').click(function()
+{
+
+  $('#audioBlocker').fadeOut(500);
+  
+});
+
+//Test
 $('#openApp1').click(function()
 {	
 
