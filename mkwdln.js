@@ -21,6 +21,27 @@ var nsd4src = "https://www.youtube.com/embed/2A3_47BI34w";
 var nsd5src = "https://www.youtube.com/embed/CXz8Wx9V-3w";
 var nsd6src = "https://www.youtube.com/embed/k6IaeQbLfmc";
 var nsd7src = "https://www.youtube.com/embed/_Wyfv6DRabs";
+ 
+var quote1 = "images/MK Facts-01.jpg";
+var quote2 = "images/MK Facts-02.jpg";
+var quote3 = "images/MK Facts-03.jpg";
+var quote4 = "images/MK Facts-04.jpg";
+var quote5 = "images/MK Facts-05.jpg";
+var quote6 = "images/MK Facts-06.jpg";
+var quote7 = "images/MK Facts-07.jpg";
+var quote8 = "images/MK Facts-08.jpg";
+var quote9 = "images/MK Facts-09.jpg";
+var quote10 = "images/MK Facts-10.jpg";
+var quote11 = "images/MK Facts-11.jpg";
+var quote12 = "images/MK Facts-12.jpg";
+var quote13 = "images/MK Facts-13.jpg";
+var quote14 = "images/MK Facts-14.jpg";
+var quote15 = "images/MK Facts-15.jpg";
+var quote16 = "images/MK Facts-16.jpg";
+var quote17 = "images/MK Facts-17.jpg";
+var quote18 = "images/MK Facts-18.jpg";
+var quote19 = "images/MK Facts-19.jpg";
+var quote20 = "images/MK Facts-20.jpg";
   
 $('#openApp1').click(function()
 {	
@@ -181,6 +202,13 @@ $('#appiframe').attr('src', 'about:blank');
 $('#appFrame').fadeOut(500);
 
 });
+  
+$('#closeButtonImage').click(function()
+{	
+  
+$('#imageFrame').fadeOut(500);
+
+});
 
 if (window.addEventListener) 
 {
@@ -206,7 +234,6 @@ return;
 var data = event.data;  
 
 if (typeof(window[data.func]) == "function") {
-console.log("work1");
 window[data.func].call();
 
 }
@@ -229,4 +256,164 @@ function openVideo()
 
 $('#closeButtonApp').click();
 
+}
+
+function openQuote1()
+{
+  
+$('#quoteImage').attr('src', quote1);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote2()
+{
+  
+$('#quoteImage').attr('src', quote2);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote3()
+{
+  
+$('#quoteImage').attr('src', quote3);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote4()
+{
+  
+$('#quoteImage').attr('src', quote4);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote5()
+{
+  
+$('#quoteImage').attr('src', quote5);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote6()
+{
+  
+$('#quoteImage').attr('src', quote6);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote7()
+{
+  
+$('#quoteImage').attr('src', quote7);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote8()
+{
+  
+$('#quoteImage').attr('src', quote8);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote9()
+{
+  
+$('#quoteImage').attr('src', quote9);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote10()
+{
+  
+$('#quoteImage').attr('src', quote10);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote11()
+{
+  
+$('#quoteImage').attr('src', quote11);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote12()
+{
+  
+$('#quoteImage').attr('src', quote12);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote13()
+{
+  
+$('#quoteImage').attr('src', quote13);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote14()
+{
+  
+$('#quoteImage').attr('src', quote14);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote15()
+{
+  
+$('#quoteImage').attr('src', quote15);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote16()
+{
+  
+$('#quoteImage').attr('src', quote16);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote17()
+{
+  
+$('#quoteImage').attr('src', quote17);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote18()
+{
+  
+$('#quoteImage').attr('src', quote18);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote19()
+{
+  
+$('#quoteImage').attr('src', quote19);
+$('#imageFrame').fadeIn(500);
+  
+}
+
+function openQuote20()
+{
+  
+$('#quoteImage').attr('src', quote20);
+$('#imageFrame').fadeIn(500);
+  
 }
