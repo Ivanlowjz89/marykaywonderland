@@ -1,7 +1,8 @@
 $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
 //Set unique ID for videos.
-var auditoriumIBCsrc = "https://www.wearegladstone.com/AuditoriumPublic";
+var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
+var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
@@ -215,6 +216,15 @@ function openAuditoriumIBC()
 
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumIBCsrc);
+$('#appFrame').fadeIn(500);
+
+}
+
+function openAuditoriumPublic()
+{
+
+$('#appFrameText').text("AUDITORIUM");
+$('#appiframe').attr('src', auditoriumPublicsrc);
 $('#appFrame').fadeIn(500);
 
 }
