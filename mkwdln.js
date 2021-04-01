@@ -3,6 +3,8 @@ $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 //Set unique ID for videos.
 var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
 var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
+//var universitysrc = "https://www.marykaymysgcc2021.com/apps/University";
+var universitysrc = "https://www.wearegladstone.com/University";
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
@@ -42,7 +44,7 @@ var quote18 = "images/MK Facts-18.jpg";
 var quote19 = "images/MK Facts-19.jpg";
 var quote20 = "images/MK Facts-20.jpg";
 
-openAuditoriumIBC();
+openUniversity();
 
 //Avatar
 $('#speechBubble').click(function()
@@ -210,6 +212,15 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 });
+
+function openUniversity()
+{
+
+$('#appFrameText').text("UNIVERSITY");
+$('#appiframe').attr('src', universitysrc);
+$('#appFrame').fadeIn(500);
+  
+}
 
 function openAuditoriumIBC()
 {
