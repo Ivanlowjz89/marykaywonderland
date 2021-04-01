@@ -185,15 +185,12 @@ window.attachEvent("onmessage", onMessage, false);
 
 function onMessage(event) {
 
-if (event.origin !== "https://www.wearegladstone.com")
-{
-return;
-}
-
+if (event.origin !== "https://www.wearegladstone.com") return;
+  
 var data = event.data;  
 
 if (typeof(window[data.func]) == "function") {
-window[data.func].call();
+window[data.func].call(null, data.message);
 
 }
 
@@ -222,76 +219,54 @@ $('#appFrame').fadeIn(500);
 
 }
 
-function playAuditorium1()
+function playAuditorium(num)
 {
 
-$('#videoFrameText').text("PRISCA SUSELLA TANIS");
-$('#videoiframe').attr('src', auditorium1src);
-$('#videoFrame').fadeIn(500);
-
-}
-
-function playAuditorium2()
-{
-
-$('#videoFrameText').text("SAYYIDATUL AFFDA BINTI ZAINUDIN");
-$('#videoiframe').attr('src', auditorium2src);
-$('#videoFrame').fadeIn(500);
-
-}
-
-function playAuditorium3()
-{
-
-$('#videoFrameText').text("FARISHA DANIA BT ZAINAL ARIFF");
-$('#videoiframe').attr('src', auditorium3src);
-$('#videoFrame').fadeIn(500);
-
-}
-
-function playAuditorium4()
-{
-
-$('#videoFrameText').text("INTAN FAZLIANA BINTI FAUZI");
-$('#videoiframe').attr('src', auditorium4src);
-$('#videoFrame').fadeIn(500);
-
-}
-
-function playAuditorium5()
-{
-
-$('#videoFrameText').text("JESSICA JANUARIUS");
-$('#videoiframe').attr('src', auditorium5src);
-$('#videoFrame').fadeIn(500);
-
-}
-
-function playAuditorium6()
-{
-
-$('#videoFrameText').text("NURULHARJAH BT HUSSIN");
-$('#videoiframe').attr('src', auditorium6src);
-$('#videoFrame').fadeIn(500);
-
-}
-
-function playAuditorium7()
-{
-
-$('#videoFrameText').text("QISTINA AMIRA BINTI IDRIS");
-$('#videoiframe').attr('src', auditorium7src);
-$('#videoFrame').fadeIn(500);
-
-}
-
-function playAuditorium8()
-{
-
-$('#videoFrameText').text("SUFI SYAZWANI");
-$('#videoiframe').attr('src', auditorium8src);
-$('#videoFrame').fadeIn(500);
-
+  switch(num)
+  {
+    
+    case 1 :
+      $('#videoFrameText').text("PRISCA SUSELLA TANIS");
+      $('#videoiframe').attr('src', auditorium1src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 2 :
+      $('#videoFrameText').text("SAYYIDATUL AFFDA BINTI ZAINUDIN");
+      $('#videoiframe').attr('src', auditorium2src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 3 :
+      $('#videoFrameText').text("FARISHA DANIA BT ZAINAL ARIFF");
+      $('#videoiframe').attr('src', auditorium3src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 4:
+      $('#videoFrameText').text("INTAN FAZLIANA BINTI FAUZI");
+      $('#videoiframe').attr('src', auditorium4src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 5 :
+      $('#videoFrameText').text("JESSICA JANUARIUS");
+      $('#videoiframe').attr('src', auditorium5src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 6 :
+      $('#videoFrameText').text("NURULHARJAH BT HUSSIN");
+      $('#videoiframe').attr('src', auditorium6src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 7 :
+      $('#videoFrameText').text("QISTINA AMIRA BINTI IDRIS");
+      $('#videoiframe').attr('src', auditorium7src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 8 :
+      $('#videoFrameText').text("SUFI SYAZWANI");
+      $('#videoiframe').attr('src', auditorium8src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    
+  }
 }
 
 function openQuote1()
