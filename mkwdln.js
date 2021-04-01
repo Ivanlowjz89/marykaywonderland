@@ -2,7 +2,7 @@ $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
 //Set unique ID for videos.
 var frame1src = "https://www.wearegladstone.com/Test";
-  
+
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
 var auditorium3src = "https://player.vimeo.com/video/528171287";
@@ -11,7 +11,7 @@ var auditorium5src = "https://player.vimeo.com/video/528176359";
 var auditorium6src = "https://player.vimeo.com/video/528178378";
 var auditorium7src = "https://player.vimeo.com/video/528676498";
 var auditorium8src = "https://player.vimeo.com/video/528675150";
- 
+
 var nsd1src = "https://www.youtube.com/embed/PLK5G6njtO8";
 var nsd2src = "https://www.youtube.com/embed/hEx0_O3BooA";
 var nsd3src = "https://www.youtube.com/embed/44vaEwj6UWM";
@@ -19,7 +19,7 @@ var nsd4src = "https://www.youtube.com/embed/2A3_47BI34w";
 var nsd5src = "https://www.youtube.com/embed/CXz8Wx9V-3w";
 var nsd6src = "https://www.youtube.com/embed/k6IaeQbLfmc";
 var nsd7src = "https://www.youtube.com/embed/_Wyfv6DRabs";
- 
+
 var quote1 = "images/MK Facts-01.jpg";
 var quote2 = "images/MK Facts-02.jpg";
 var quote3 = "images/MK Facts-03.jpg";
@@ -44,35 +44,35 @@ var quote20 = "images/MK Facts-20.jpg";
 //Avatar
 $('#speechBubble').click(function()
 {
-  
-  $('#speechBubble').fadeOut(500);
-  $('#menuFrame').fadeIn(500);
-  $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
+
+$('#speechBubble').fadeOut(500);
+$('#menuFrame').fadeIn(500);
+$('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 });
 
 $('#avatarImage').click(function()
 {
-  
-  $('#speechBubble').fadeOut(500);
-  $('#menuFrame').fadeIn(500);
-  $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
-  
+
+$('#speechBubble').fadeOut(500);
+$('#menuFrame').fadeIn(500);
+$('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
+
 });
 
 //Audio
 $('#playAudioButton').click(function()
 {
 
-  $('#audioBlocker').fadeOut(500);
+$('#audioBlocker').fadeOut(500);
 
 });
 
 $('#audioBlocker').click(function()
 {
 
-  $('#audioBlocker').fadeOut(500);
-  
+$('#audioBlocker').fadeOut(500);
+
 });
 
 //Test
@@ -85,78 +85,6 @@ $('#appFrame').fadeIn(500);
 
 });
 
-$('#buttonAuditoriumVideo1').click(function()
-{	
-
-$('#videoFrameText').text("PRISCA SUSELLA TANIS");
-$('#videoiframe').attr('src', auditorium1src);
-$('#videoFrame').fadeIn(500);
-
-});
-
-$('#buttonAuditoriumVideo2').click(function()
-{	
-
-$('#videoFrameText').text("SAYYIDATUL AFFDA BINTI ZAINUDIN");
-$('#videoiframe').attr('src', auditorium2src);
-$('#videoFrame').fadeIn(500);
-
-});
-  
-$('#buttonAuditoriumVideo3').click(function()
-{	
-
-$('#videoFrameText').text("FARISHA DANIA BT ZAINAL ARIFF");
-$('#videoiframe').attr('src', auditorium3src);
-$('#videoFrame').fadeIn(500);
-
-});
-  
-$('#buttonAuditoriumVideo4').click(function()
-{	
-
-$('#videoFrameText').text("INTAN FAZLIANA BINTI FAUZI");
-$('#videoiframe').attr('src', auditorium4src);
-$('#videoFrame').fadeIn(500);
-
-});
-  
-$('#buttonAuditoriumVideo5').click(function()
-{	
-
-$('#videoFrameText').text("JESSICA JANUARIUS");
-$('#videoiframe').attr('src', auditorium5src);
-$('#videoFrame').fadeIn(500);
-
-});
-  
-$('#buttonAuditoriumVideo6').click(function()
-{	
-
-$('#videoFrameText').text("NURULHARJAH BT HUSSIN");
-$('#videoiframe').attr('src', auditorium6src);
-$('#videoFrame').fadeIn(500);
-
-});
-  
-$('#buttonAuditoriumVideo7').click(function()
-{	
-
-$('#videoFrameText').text("QISTINA AMIRA BINTI IDRIS");
-$('#videoiframe').attr('src', auditorium7src);
-$('#videoFrame').fadeIn(500);
-
-});
-  
-$('#buttonAuditoriumVideo8').click(function()
-{	
-
-$('#videoFrameText').text("SUFI SYAZWANI");
-$('#videoiframe').attr('src', auditorium8src);
-$('#videoFrame').fadeIn(500);
-
-});
-  
 $('#buttonNSDVideo1').click(function()
 {	
 
@@ -165,7 +93,7 @@ $('#videoiframe').attr('src', nsd1src);
 $('#videoFrame').fadeIn(500);
 
 });
-  
+
 $('#buttonNSDVideo2').click(function()
 {	
 
@@ -174,7 +102,7 @@ $('#videoiframe').attr('src', nsd2src);
 $('#videoFrame').fadeIn(500);
 
 });
-  
+
 $('#buttonNSDVideo3').click(function()
 {	
 
@@ -183,7 +111,7 @@ $('#videoiframe').attr('src', nsd3src);
 $('#videoFrame').fadeIn(500);
 
 });
-  
+
 $('#buttonNSDVideo4').click(function()
 {	
 
@@ -192,7 +120,7 @@ $('#videoiframe').attr('src', nsd4src);
 $('#videoFrame').fadeIn(500);
 
 });
-  
+
 $('#buttonNSDVideo5').click(function()
 {	
 
@@ -219,7 +147,7 @@ $('#videoiframe').attr('src', nsd7src);
 $('#videoFrame').fadeIn(500);
 
 }); 
-  
+
 $('#closeButtonVideo').click(function()
 {	
 
@@ -235,17 +163,17 @@ $('#appiframe').attr('src', 'about:blank');
 $('#appFrame').fadeOut(500);
 
 });
-  
+
 $('#closeButtonImage').click(function()
 {	
-  
+
 $('#imageFrame').fadeOut(500);
 
 });
 
 $('#closeButtonMenu').click(function()
 {	
-  
+
 $('#menuFrame').fadeOut(500);
 
 });
@@ -289,9 +217,9 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 window.addEventListener('resize', () => {
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-  
+
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
-  
+
 });
 
 function openVideo()
@@ -301,36 +229,108 @@ $('#closeButtonApp').click();
 
 }
 
+function playAuditorium1()
+{
+
+$('#videoFrameText').text("PRISCA SUSELLA TANIS");
+$('#videoiframe').attr('src', auditorium1src);
+$('#videoFrame').fadeIn(500);
+
+}
+
+function playAuditorium2()
+{
+
+$('#videoFrameText').text("SAYYIDATUL AFFDA BINTI ZAINUDIN");
+$('#videoiframe').attr('src', auditorium2src);
+$('#videoFrame').fadeIn(500);
+
+}
+
+function playAuditorium3()
+{
+
+$('#videoFrameText').text("FARISHA DANIA BT ZAINAL ARIFF");
+$('#videoiframe').attr('src', auditorium3src);
+$('#videoFrame').fadeIn(500);
+
+}
+
+function playAuditorium4()
+{
+
+$('#videoFrameText').text("INTAN FAZLIANA BINTI FAUZI");
+$('#videoiframe').attr('src', auditorium4src);
+$('#videoFrame').fadeIn(500);
+
+}
+
+function playAuditorium5()
+{
+
+$('#videoFrameText').text("JESSICA JANUARIUS");
+$('#videoiframe').attr('src', auditorium5src);
+$('#videoFrame').fadeIn(500);
+
+}
+
+function playAuditorium6()
+{
+
+$('#videoFrameText').text("NURULHARJAH BT HUSSIN");
+$('#videoiframe').attr('src', auditorium6src);
+$('#videoFrame').fadeIn(500);
+
+}
+
+function playAuditorium7()
+{
+
+$('#videoFrameText').text("QISTINA AMIRA BINTI IDRIS");
+$('#videoiframe').attr('src', auditorium7src);
+$('#videoFrame').fadeIn(500);
+
+}
+
+function playAuditorium8()
+{
+
+$('#videoFrameText').text("SUFI SYAZWANI");
+$('#videoiframe').attr('src', auditorium8src);
+$('#videoFrame').fadeIn(500);
+
+}
+
 function openQuote1()
 {
-  
+
 $('#quoteImage').attr('src', quote1);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote2()
 {
-  
+
 $('#quoteImage').attr('src', quote2);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote3()
 {
-  
+
 $('#quoteImage').attr('src', quote3);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote4()
 {
-  
+
 $('#quoteImage').attr('src', quote4);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote5()
@@ -338,125 +338,125 @@ function openQuote5()
 
 $('#quoteImage').attr('src', quote5);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote6()
 {
-  
+
 $('#quoteImage').attr('src', quote6);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote7()
 {
-  
+
 $('#quoteImage').attr('src', quote7);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote8()
 {
-  
+
 $('#quoteImage').attr('src', quote8);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote9()
 {
-  
+
 $('#quoteImage').attr('src', quote9);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote10()
 {
-  
+
 $('#quoteImage').attr('src', quote10);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote11()
 {
-  
+
 $('#quoteImage').attr('src', quote11);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote12()
 {
-  
+
 $('#quoteImage').attr('src', quote12);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote13()
 {
-  
+
 $('#quoteImage').attr('src', quote13);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote14()
 {
-  
+
 $('#quoteImage').attr('src', quote14);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote15()
 {
-  
+
 $('#quoteImage').attr('src', quote15);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote16()
 {
-  
+
 $('#quoteImage').attr('src', quote16);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote17()
 {
-  
+
 $('#quoteImage').attr('src', quote17);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote18()
 {
-  
+
 $('#quoteImage').attr('src', quote18);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote19()
 {
-  
+
 $('#quoteImage').attr('src', quote19);
 $('#imageFrame').fadeIn(500);
-  
+
 }
 
 function openQuote20()
 {
-  
+
 $('#quoteImage').attr('src', quote20);
 $('#imageFrame').fadeIn(500);
-  
+
 }
