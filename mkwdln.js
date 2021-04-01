@@ -79,69 +79,6 @@ $('#audioBlocker').fadeOut(500);
 
 });
 
-$('#buttonNSDVideo1').click(function()
-{	
-
-$('#videoFrameText').text("NAFISAH OMAR");
-$('#videoiframe').attr('src', nsd1src);
-$('#videoFrame').fadeIn(500);
-
-});
-
-$('#buttonNSDVideo2').click(function()
-{	
-
-$('#videoFrameText').text("JANE LEE EAN TIN");
-$('#videoiframe').attr('src', nsd2src);
-$('#videoFrame').fadeIn(500);
-
-});
-
-$('#buttonNSDVideo3').click(function()
-{	
-
-$('#videoFrameText').text("ROBIAH HURI");
-$('#videoiframe').attr('src', nsd3src);
-$('#videoFrame').fadeIn(500);
-
-});
-
-$('#buttonNSDVideo4').click(function()
-{	
-
-$('#videoFrameText').text("NURUL SHAKIRIN LEWIS");
-$('#videoiframe').attr('src', nsd4src);
-$('#videoFrame').fadeIn(500);
-
-});
-
-$('#buttonNSDVideo5').click(function()
-{	
-
-$('#videoFrameText').text("SUHAIDAH SHEILA");
-$('#videoiframe').attr('src', nsd5src);
-$('#videoFrame').fadeIn(500);
-
-}); 
-
-$('#buttonNSDVideo6').click(function()
-{	
-
-$('#videoFrameText').text("NORRAZEAN ABDUL RAHMAN");
-$('#videoiframe').attr('src', nsd6src);
-$('#videoFrame').fadeIn(500);
-
-}); 
-
-$('#buttonNSDVideo7').click(function()
-{	
-
-$('#videoFrameText').text("KAHIRUNNISA BINTI MAHFAR ADIB");
-$('#videoiframe').attr('src', nsd7src);
-$('#videoFrame').fadeIn(500);
-
-}); 
-
 $('#closeButtonVideo').click(function()
 {	
 
@@ -286,6 +223,50 @@ function playAuditorium(num)
       $('#videoFrame').fadeIn(500);
     break;
     
+  }
+}
+
+function playNSD(num)
+{
+
+  switch(num)
+  {
+    
+    case 1 :
+      $('#videoFrameText').text("NAFISAH OMAR");
+      $('#videoiframe').attr('src', nsd1src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 2 :   
+      $('#videoFrameText').text("JANE LEE EAN TIN");
+      $('#videoiframe').attr('src', nsd2src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 3 :
+      $('#videoFrameText').text("ROBIAH HURI");
+      $('#videoiframe').attr('src', nsd3src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 4:
+      $('#videoFrameText').text("NURUL SHAKIRIN LEWIS");
+      $('#videoiframe').attr('src', nsd4src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 5 :
+      $('#videoFrameText').text("SUHAIDAH SHEILA");
+      $('#videoiframe').attr('src', nsd5src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 6 :  
+      $('#videoFrameText').text("NORRAZEAN ABDUL RAHMAN");
+      $('#videoiframe').attr('src', nsd6src);
+      $('#videoFrame').fadeIn(500);
+    break;
+    case 7 :
+      $('#videoFrameText').text("KAHIRUNNISA BINTI MAHFAR ADIB");
+      $('#videoiframe').attr('src', nsd7src);
+      $('#videoFrame').fadeIn(500);
+    break;
   }
 }
 
