@@ -4,6 +4,8 @@ $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
 var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
 var universitysrc = "https://www.marykaymysgcc2021.com/apps/University";
+var nsdsrc = "https://www.wearegladstone.com/NSD";
+
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
@@ -43,7 +45,7 @@ var quote18 = "images/MK Facts-18.jpg";
 var quote19 = "images/MK Facts-19.jpg";
 var quote20 = "images/MK Facts-20.jpg";
 
-//openUniversity();
+openNSD();
 
 //Avatar
 $('#speechBubble').click(function()
@@ -154,6 +156,15 @@ function openUniversity()
 
 $('#appFrameText').text("UNIVERSITY");
 $('#appiframe').attr('src', universitysrc);
+$('#appFrame').fadeIn(500);
+  
+}
+
+function openNSD()
+{
+
+$('#appFrameText').text("NSD BUSINESS SUITES");
+$('#appiframe').attr('src', nsdsrc);
 $('#appFrame').fadeIn(500);
   
 }
