@@ -74,7 +74,7 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 });
 
-$('#buttonDownloadAvatar).click(function()
+$('#buttonDownloadAvatar').click(function()
 {
 
 let MIME_TYPE = "image/png";
@@ -86,6 +86,19 @@ a.click();
   
 });
 
+//Photobooth
+$('#buttonPhotobooth').click(function()
+{
+  //$('#container').fadeIn(500);
+});
+                             
+//Logout
+$('#buttonLogout').click(function()
+{
+
+  //logout link here
+});
+                             
 //Audio
 $('#playAudioButton').click(function()
 {
