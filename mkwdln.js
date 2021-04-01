@@ -1,11 +1,21 @@
-$('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
+var avatarPhoto = "";
+//var getAvatarPhoto = await checkPhotos();
+//if(getAvatarPhoto.photos != null)
+//{
+  //avatarPhoto = getAvatarPhoto.photos;
+//}
+
+//var getAvatarImage = await checkAvatar();
+//if(getAvatarImage.avatar != null)
+//{
+  $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
+//}
 
 //Set unique ID for videos.
 var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
 var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
 var universitysrc = "https://www.marykaymysgcc2021.com/apps/University";
 var nsdsrc = "https://www.marykaymysgcc2021.com/apps/NSD";
-
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
@@ -62,6 +72,18 @@ $('#speechBubble').fadeOut(500);
 $('#menuFrame').fadeIn(500);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
+});
+
+$('#buttonDownloadAvatar).click(function()
+{
+
+let MIME_TYPE = "image/png";
+let a = document.createElement('a');
+a.href = avatarImage;
+a.download = 'myavatar.png';
+a.dataset.downloadurl = [MIME_TYPE, a.download, a.href].join(':');
+a.click();
+  
 });
 
 //Audio
