@@ -41,7 +41,7 @@ var quote18 = "images/MK Facts-18.jpg";
 var quote19 = "images/MK Facts-19.jpg";
 var quote20 = "images/MK Facts-20.jpg";
 
-openTest();
+openAuditoriumIBC();
 
 //Avatar
 $('#speechBubble').click(function()
