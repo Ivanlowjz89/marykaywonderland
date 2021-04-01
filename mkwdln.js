@@ -1,7 +1,7 @@
 $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
 //Set unique ID for videos.
-var frame1src = "https://www.wearegladstone.com/Test";
+var frame1src = "https://www.wearegladstone.com/AuditoriumIBC";
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
@@ -41,6 +41,8 @@ var quote18 = "images/MK Facts-18.jpg";
 var quote19 = "images/MK Facts-19.jpg";
 var quote20 = "images/MK Facts-20.jpg";
 
+openTest();
+
 //Avatar
 $('#speechBubble').click(function()
 {
@@ -72,16 +74,6 @@ $('#audioBlocker').click(function()
 {
 
 $('#audioBlocker').fadeOut(500);
-
-});
-
-//Test
-$('#openApp1').click(function()
-{	
-
-$('#appFrameText').text("TEST APP");
-$('#appiframe').attr('src', frame1src);
-$('#appFrame').fadeIn(500);
 
 });
 
@@ -222,10 +214,12 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 });
 
-function openVideo()
+function openTest()
 {
 
-$('#closeButtonApp').click();
+$('#appFrameText').text("TEST APP");
+$('#appiframe').attr('src', frame1src);
+$('#appFrame').fadeIn(500);
 
 }
 
