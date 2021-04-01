@@ -1,7 +1,7 @@
 $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
 //Set unique ID for videos.
-var frame1src = "https://www.wearegladstone.com/AuditoriumIBC";
+var auditorium1src = "https://www.wearegladstone.com/AuditoriumIBC";
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
@@ -187,7 +187,6 @@ function onMessage(event) {
 
 if (event.origin !== "https://www.wearegladstone.com")
 {
-
 return;
 }
 
@@ -214,11 +213,11 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 });
 
-function openTest()
+function openAuditoriumIBC()
 {
 
-$('#appFrameText').text("TEST APP");
-$('#appiframe').attr('src', frame1src);
+$('#appFrameText').text("AUDITORIUM");
+$('#appiframe').attr('src', auditorium1src);
 $('#appFrame').fadeIn(500);
 
 }
