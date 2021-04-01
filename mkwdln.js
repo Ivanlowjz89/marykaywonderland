@@ -1,7 +1,7 @@
 $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
 
 //Set unique ID for videos.
-var auditoriumIBCsrc = "https://www.wearegladstone.com/AuditoriumIBC";
+var auditoriumIBCsrc = "https://www.wearegladstone.com/AuditoriumPublic";
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
