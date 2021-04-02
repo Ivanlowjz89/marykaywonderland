@@ -96,7 +96,7 @@ $('#buttonDownloadAvatar').click(function()
 clickSound.play();
 let MIME_TYPE = "image/png";
 let a = document.createElement('a');
-a.href = avatarImage;
+a.href = avatarPhoto;
 a.download = 'myavatar.png';
 a.dataset.downloadurl = [MIME_TYPE, a.download, a.href].join(':');
 a.click();
