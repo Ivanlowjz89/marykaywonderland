@@ -18,9 +18,11 @@ else
 }
 
 var getAvatarImage = await checkAvatar();
+var avatarImageContainer = "";
 if(getAvatarImage.avatar != null)
 {
   $('#avatarImage').attr('src', getAvatarImage.avatar);
+  avatarImageContainer = getAvatarImage.avatar;
 }
 else
 {
@@ -104,7 +106,7 @@ a.click();
 $('#buttonPhotobooth').click(function()
 {
   clickSound.play();
-  $('#container').fadeIn(500);
+  startCamera(avatarImageContainer);
 });
                              
 //Logout
