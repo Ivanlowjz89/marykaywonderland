@@ -1,3 +1,5 @@
+var BGM = document.getElementById('bgm');
+
 var avatarPhoto = "";
 var getAvatarPhoto = await checkPhotos();
 if(getAvatarPhoto.photos != null)
@@ -91,7 +93,7 @@ a.click();
 //Photobooth
 $('#buttonPhotobooth').click(function()
 {
-  //$('#container').fadeIn(500);
+  $('#container').fadeIn(500);
 });
                              
 //Logout
@@ -105,6 +107,7 @@ $('#playAudioButton').click(function()
 {
 
 $('#audioBlocker').fadeOut(500);
+BGM.play();
 
 });
 
@@ -112,7 +115,8 @@ $('#audioBlocker').click(function()
 {
 
 $('#audioBlocker').fadeOut(500);
-
+BGM.play();
+  
 });
 
 $('#closeButtonVideo').click(function()
