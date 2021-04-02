@@ -2,7 +2,7 @@ var BGM = document.getElementById('bgm');
 
 initAvatars();
 
-function initAvatars()
+async function initAvatars()
 {
   
 var avatarPhoto = "";
