@@ -3,7 +3,7 @@ var clickSound = document.getElementById('clickSound');
 var avatarPhoto = "";
 var avatarImageContainer = "";
 
-/*initAvatars();
+initAvatars();
 
 async function initAvatars()
 {
@@ -31,7 +31,7 @@ else
 }
 
 }
-*/
+
 //Set unique ID for videos.
 var auditoriumIBCsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumIBC";
 var auditoriumPublicsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumPublic";
