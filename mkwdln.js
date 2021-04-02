@@ -1,15 +1,23 @@
 var avatarPhoto = "";
-//var getAvatarPhoto = await checkPhotos();
-//if(getAvatarPhoto.photos != null)
-//{
-  //avatarPhoto = getAvatarPhoto.photos;
-//}
+var getAvatarPhoto = await checkPhotos();
+if(getAvatarPhoto.photos != null)
+{
+  avatarPhoto = getAvatarPhoto.photos;
+}
+else
+{
+  alert("Error fetching your photo! Please refresh and try again!"); 
+}
 
-//var getAvatarImage = await checkAvatar();
-//if(getAvatarImage.avatar != null)
-//{
-  $('#avatarImage').attr('src', 'https://www.wearegladstone.com/Test/image.png');
-//}
+var getAvatarImage = await checkAvatar();
+if(getAvatarImage.avatar != null)
+{
+  $('#avatarImage').attr('src', 'getAvatarImage.avatar);
+}
+else
+{
+  alert("Error fetching your avatar! Please refresh and try again!"); 
+}
 
 //Set unique ID for videos.
 var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
@@ -34,56 +42,50 @@ var nsd5src = "https://www.youtube.com/embed/CXz8Wx9V-3w";
 var nsd6src = "https://www.youtube.com/embed/k6IaeQbLfmc";
 var nsd7src = "https://www.youtube.com/embed/_Wyfv6DRabs";
 
-var quote1 = "images/MK Facts-01.jpg";
-var quote2 = "images/MK Facts-02.jpg";
-var quote3 = "images/MK Facts-03.jpg";
-var quote4 = "images/MK Facts-04.jpg";
-var quote5 = "images/MK Facts-05.jpg";
-var quote6 = "images/MK Facts-06.jpg";
-var quote7 = "images/MK Facts-07.jpg";
-var quote8 = "images/MK Facts-08.jpg";
-var quote9 = "images/MK Facts-09.jpg";
-var quote10 = "images/MK Facts-10.jpg";
-var quote11 = "images/MK Facts-11.jpg";
-var quote12 = "images/MK Facts-12.jpg";
-var quote13 = "images/MK Facts-13.jpg";
-var quote14 = "images/MK Facts-14.jpg";
-var quote15 = "images/MK Facts-15.jpg";
-var quote16 = "images/MK Facts-16.jpg";
-var quote17 = "images/MK Facts-17.jpg";
-var quote18 = "images/MK Facts-18.jpg";
-var quote19 = "images/MK Facts-19.jpg";
-var quote20 = "images/MK Facts-20.jpg";
+var quote1 = "images/MKFacts-01.jpg";
+var quote2 = "images/MKFacts-02.jpg";
+var quote3 = "images/MKFacts-03.jpg";
+var quote4 = "images/MKFacts-04.jpg";
+var quote5 = "images/MKFacts-05.jpg";
+var quote6 = "images/MKFacts-06.jpg";
+var quote7 = "images/MKFacts-07.jpg";
+var quote8 = "images/MKFacts-08.jpg";
+var quote9 = "images/MKFacts-09.jpg";
+var quote10 = "images/MKFacts-10.jpg";
+var quote11 = "images/MKFacts-11.jpg";
+var quote12 = "images/MKFacts-12.jpg";
+var quote13 = "images/MKFacts-13.jpg";
+var quote14 = "images/MKFacts-14.jpg";
+var quote15 = "images/MKFacts-15.jpg";
+var quote16 = "images/MKFacts-16.jpg";
+var quote17 = "images/MKFacts-17.jpg";
+var quote18 = "images/MKFacts-18.jpg";
+var quote19 = "images/MKFacts-19.jpg";
+var quote20 = "images/MKFacts-20.jpg";
 
 //Avatar
 $('#speechBubble').click(function()
 {
-
 $('#speechBubble').fadeOut(500);
 $('#menuFrame').fadeIn(500);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
-
 });
 
 $('#avatarImage').click(function()
 {
-
 $('#speechBubble').fadeOut(500);
 $('#menuFrame').fadeIn(500);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
-
 });
 
 $('#buttonDownloadAvatar').click(function()
 {
-
 let MIME_TYPE = "image/png";
 let a = document.createElement('a');
 a.href = avatarImage;
 a.download = 'myavatar.png';
 a.dataset.downloadurl = [MIME_TYPE, a.download, a.href].join(':');
 a.click();
-  
 });
 
 //Photobooth
@@ -95,8 +97,7 @@ $('#buttonPhotobooth').click(function()
 //Logout
 $('#buttonLogout').click(function()
 {
-
-  //logout link here
+  window.open("https://staging.marykaymysgcc2021.com/users/sign_out", "_self");
 });
                              
 //Audio
@@ -116,61 +117,43 @@ $('#audioBlocker').fadeOut(500);
 
 $('#closeButtonVideo').click(function()
 {	
-
 $('#videoiframe').attr('src', 'about:blank');
 $('#videoFrame').fadeOut(500);
-
 });
 
 $('#closeButtonApp').click(function()
 {	
-
 $('#appiframe').attr('src', 'about:blank');
 $('#appFrame').fadeOut(500);
-
 });
 
 $('#closeButtonImage').click(function()
 {	
-
 $('#imageFrame').fadeOut(500);
-
 });
 
 $('#closeButtonMenu').click(function()
 {	
-
 $('#menuFrame').fadeOut(500);
-
 });
 
 if (window.addEventListener) 
 {
-
 window.addEventListener("message", onMessage, false);        
-
 } 
 else if (window.attachEvent) 
 {
-
 window.attachEvent("onmessage", onMessage, false);
-
 }
 
 function onMessage(event) {
-
 if (event.origin !== "https://www.wearegladstone.com") return;
-  
 var data = event.data;  
-
 if (typeof(window[data.func]) == "function") {
 window[data.func].call(null, data.message);
-
 }
 
 }
-
-
 
 //VH
 let vh = window.innerHeight * 0.01;
@@ -179,10 +162,43 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 window.addEventListener('resize', () => {
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
-
 });
+
+function openMickMock()
+{
+  
+  console.log("Open Mick Mock");
+  
+}
+
+function openRecognition()
+{
+  
+  console.log("Open Recognition");  
+  
+}
+
+function openProductGallery()
+{
+  
+  console.log("Open Product Gallery");  
+  
+}
+
+function openLuckyDraw()
+{
+  
+  console.log("Open Lucky Draw");  
+  
+}
+
+function openExcitement()
+{
+  
+  console.log("Open Excitement");  
+  
+}
 
 function openUniversity()
 {
@@ -198,6 +214,15 @@ function openNSD()
 
 $('#appFrameText').text("NSD BUSINESS SUITES");
 $('#appiframe').attr('src', nsdsrc);
+$('#appFrame').fadeIn(500);
+  
+}
+
+function openAuditorium()
+{
+  
+$('#appFrameText').text("AUDITORIUM");
+$('#appiframe').attr('src', auditoriumIBCsrc);
 $('#appFrame').fadeIn(500);
   
 }
