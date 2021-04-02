@@ -1,4 +1,5 @@
 var BGM = document.getElementById('bgm');
+var clickSound = document.getElementById('clickSound');
 
 initAvatars();
 
@@ -74,6 +75,7 @@ var quote20 = "images/MKFacts-20.jpg";
 //Avatar
 $('#speechBubble').click(function()
 {
+clickSound.play();
 $('#speechBubble').fadeOut(500);
 $('#menuFrame').fadeIn(500);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
@@ -81,6 +83,7 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 $('#avatarImage').click(function()
 {
+clickSound.play();
 $('#speechBubble').fadeOut(500);
 $('#menuFrame').fadeIn(500);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
@@ -88,6 +91,7 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 $('#buttonDownloadAvatar').click(function()
 {
+clickSound.play();
 let MIME_TYPE = "image/png";
 let a = document.createElement('a');
 a.href = avatarImage;
@@ -99,12 +103,14 @@ a.click();
 //Photobooth
 $('#buttonPhotobooth').click(function()
 {
+  clickSound.play();
   $('#container').fadeIn(500);
 });
                              
 //Logout
 $('#buttonLogout').click(function()
 {
+  clickSound.play();
   window.open("https://staging.marykaymysgcc2021.com/users/sign_out", "_self");
 });
                              
@@ -127,23 +133,27 @@ BGM.play();
 
 $('#closeButtonVideo').click(function()
 {	
+clickSound.play();
 $('#videoiframe').attr('src', 'about:blank');
 $('#videoFrame').fadeOut(500);
 });
 
 $('#closeButtonApp').click(function()
 {	
+clickSound.play();
 $('#appiframe').attr('src', 'about:blank');
 $('#appFrame').fadeOut(500);
 });
 
 $('#closeButtonImage').click(function()
 {	
+clickSound.play();
 $('#imageFrame').fadeOut(500);
 });
 
 $('#closeButtonMenu').click(function()
 {	
+clickSound.play();
 $('#menuFrame').fadeOut(500);
 });
 
@@ -177,42 +187,42 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 function openMickMock()
 {
-  
+  clickSound.play();
   console.log("Open Mick Mock");
   
 }
 
 function openRecognition()
 {
-  
+  clickSound.play();
   console.log("Open Recognition");  
   
 }
 
 function openProductGallery()
 {
-  
+  clickSound.play();
   console.log("Open Product Gallery");  
   
 }
 
 function openLuckyDraw()
 {
-  
+  clickSound.play();
   console.log("Open Lucky Draw");  
   
 }
 
 function openExcitement()
 {
-  
+  clickSound.play();
   console.log("Open Excitement");  
   
 }
 
 function openUniversity()
 {
-
+clickSound.play();
 $('#appFrameText').text("UNIVERSITY");
 $('#appiframe').attr('src', universitysrc);
 $('#appFrame').fadeIn(500);
@@ -221,7 +231,7 @@ $('#appFrame').fadeIn(500);
 
 function openNSD()
 {
-
+clickSound.play();
 $('#appFrameText').text("NSD BUSINESS SUITES");
 $('#appiframe').attr('src', nsdsrc);
 $('#appFrame').fadeIn(500);
@@ -230,7 +240,7 @@ $('#appFrame').fadeIn(500);
 
 function openAuditorium()
 {
-  
+  clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumIBCsrc);
 $('#appFrame').fadeIn(500);
@@ -239,7 +249,7 @@ $('#appFrame').fadeIn(500);
 
 function openAuditoriumIBC()
 {
-
+clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumIBCsrc);
 $('#appFrame').fadeIn(500);
@@ -248,7 +258,7 @@ $('#appFrame').fadeIn(500);
 
 function openAuditoriumPublic()
 {
-
+clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumPublicsrc);
 $('#appFrame').fadeIn(500);
@@ -351,7 +361,7 @@ function playNSD(num)
 
 function openQuote1()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote1);
 $('#imageFrame').fadeIn(500);
 
@@ -359,7 +369,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote2()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote2);
 $('#imageFrame').fadeIn(500);
 
@@ -367,7 +377,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote3()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote3);
 $('#imageFrame').fadeIn(500);
 
@@ -375,7 +385,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote4()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote4);
 $('#imageFrame').fadeIn(500);
 
@@ -383,7 +393,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote5()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote5);
 $('#imageFrame').fadeIn(500);
 
@@ -391,7 +401,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote6()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote6);
 $('#imageFrame').fadeIn(500);
 
@@ -399,7 +409,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote7()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote7);
 $('#imageFrame').fadeIn(500);
 
@@ -407,7 +417,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote8()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote8);
 $('#imageFrame').fadeIn(500);
 
@@ -415,7 +425,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote9()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote9);
 $('#imageFrame').fadeIn(500);
 
@@ -423,7 +433,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote10()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote10);
 $('#imageFrame').fadeIn(500);
 
@@ -431,7 +441,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote11()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote11);
 $('#imageFrame').fadeIn(500);
 
@@ -439,7 +449,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote12()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote12);
 $('#imageFrame').fadeIn(500);
 
@@ -447,7 +457,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote13()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote13);
 $('#imageFrame').fadeIn(500);
 
@@ -455,7 +465,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote14()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote14);
 $('#imageFrame').fadeIn(500);
 
@@ -463,7 +473,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote15()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote15);
 $('#imageFrame').fadeIn(500);
 
@@ -471,7 +481,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote16()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote16);
 $('#imageFrame').fadeIn(500);
 
@@ -479,7 +489,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote17()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote17);
 $('#imageFrame').fadeIn(500);
 
@@ -487,7 +497,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote18()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote18);
 $('#imageFrame').fadeIn(500);
 
@@ -495,7 +505,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote19()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote19);
 $('#imageFrame').fadeIn(500);
 
@@ -503,7 +513,7 @@ $('#imageFrame').fadeIn(500);
 
 function openQuote20()
 {
-
+clickSound.play();
 $('#quoteImage').attr('src', quote20);
 $('#imageFrame').fadeIn(500);
 
