@@ -19,7 +19,7 @@ else
 var getAvatarImage = await checkAvatar();
 if(getAvatarImage.avatar != null)
 {
-  $('#avatarImage').attr('src', 'getAvatarImage.avatar);
+  $('#avatarImage').attr('src', getAvatarImage.avatar);
 }
 else
 {
