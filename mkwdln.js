@@ -1,12 +1,12 @@
 var BGM = document.getElementById('bgm');
 var clickSound = document.getElementById('clickSound');
-
+var avatarPhoto = "";
+var avatarImageContainer = "";
 //initAvatars();
 
 async function initAvatars()
 {
   
-var avatarPhoto = "";
 var getAvatarPhoto = await checkPhotos();
 if(getAvatarPhoto.photos != null)
 {
@@ -18,7 +18,7 @@ else
 }
 
 var getAvatarImage = await checkAvatar();
-var avatarImageContainer = "";
+
 if(getAvatarImage.avatar != null)
 {
   $('#avatarImage').attr('src', getAvatarImage.avatar);
