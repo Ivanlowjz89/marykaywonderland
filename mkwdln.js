@@ -1,7 +1,7 @@
 var BGM = document.getElementById('bgm');
 var clickSound = document.getElementById('clickSound');
 
-initAvatars();
+//initAvatars();
 
 async function initAvatars()
 {
