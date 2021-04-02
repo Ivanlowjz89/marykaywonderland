@@ -106,7 +106,7 @@ a.click();
 $('#buttonPhotobooth').click(function()
 {
   clickSound.play();
-  startCamera(avatarImageContainer);
+  startCamera("asdasdasdas");
 });
                              
 //Logout
