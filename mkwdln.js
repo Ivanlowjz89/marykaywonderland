@@ -1,5 +1,10 @@
 var BGM = document.getElementById('bgm');
 
+initAvatars();
+
+function initAvatars()
+{
+  
 var avatarPhoto = "";
 var getAvatarPhoto = await checkPhotos();
 if(getAvatarPhoto.photos != null)
@@ -21,6 +26,7 @@ else
   alert("Error fetching your avatar! Please refresh and try again!"); 
 }
 
+}
 //Set unique ID for videos.
 var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
 var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
