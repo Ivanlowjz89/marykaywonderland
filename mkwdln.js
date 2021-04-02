@@ -29,10 +29,10 @@ else
 
 }
 //Set unique ID for videos.
-var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
-var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
-var universitysrc = "https://www.marykaymysgcc2021.com/apps/University";
-var nsdsrc = "https://www.marykaymysgcc2021.com/apps/NSD";
+var auditoriumIBCsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumIBC";
+var auditoriumPublicsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumPublic";
+var universitysrc = "https://staging.marykaymysgcc2021.com/apps/University";
+var nsdsrc = "https://staging.marykaymysgcc2021.com/apps/NSD";
 
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
