@@ -87,11 +87,13 @@ var mycar4src = "https://player.vimeo.com/video/533436148";
 
 var sgndsrc = "https://player.vimeo.com/video/533449849";
 
-var sgsa1src = "https://player.vimeo.com/video/533450659";
-var sgsa2src = "https://player.vimeo.com/video/533450735";
+var sgsa1src = "https://player.vimeo.com/video/533450798";
+var sgsa2src = "https://player.vimeo.com/video/533450923";
+var sgsa3src = "https://player.vimeo.com/video/533450659";
+var sgsa4src = "https://player.vimeo.com/video/533450735";
 
-var sgsaot1src = "https://player.vimeo.com/video/533450798";
-var sgsaot2src = "https://player.vimeo.com/video/533450923";
+var sgsaot1src = "https://player.vimeo.com/video/533446851";
+var sgsaot2src = "https://player.vimeo.com/video/533447137";
 var sgsaot3src = "https://player.vimeo.com/video/533451025";
 var sgsaot4src = "https://player.vimeo.com/video/533450403";
 var sgsaot5src = "https://player.vimeo.com/video/533450493";
@@ -531,16 +533,69 @@ function playSGSA1(num)
   BGM.pause();
   switch(num)
   {
-   
     case 1:
-      $('#videoFrameText').text("TEAM LEADER");
-      $('#videoiframe').attr('src', sgmoveup1src);
+      $('#videoFrameText').text("COPS BC");
+      $('#videoiframe').attr('src', sgsa1src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 2:
+      $('#videoFrameText').text("COPS SD");
+      $('#videoiframe').attr('src', sgsa2src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 3:
+      $('#videoFrameText').text("COA 155K");
+      $('#videoiframe').attr('src', sgsa3src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 4:
+      $('#videoFrameText').text("COA 251K");
+      $('#videoiframe').attr('src', sgsa4src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  }
+  
+}
+
+function playSGSA2(num)
+{
+  BGM.pause();
+  switch(num)
+  {
+      case 1:
+      $('#videoFrameText').text("COPS BC");
+      $('#videoiframe').attr('src', sgsaot1src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 2:
+      $('#videoFrameText').text("COPS SD");
+      $('#videoiframe').attr('src', sgsaot2src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 3:
+      $('#videoFrameText').text("COA 155K");
+      $('#videoiframe').attr('src', sgsaot4src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 4:
+      $('#videoFrameText').text("COA 251K");
+      $('#videoiframe').attr('src', sgsaot5src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 5:
+      $('#videoFrameText').text("COS");
+      $('#videoiframe').attr('src', sgsaot3src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      case 6:
+      $('#videoFrameText').text("COE & TDT");
+      $('#videoiframe').attr('src', sgsaot6src);
       $('#videoFrame').fadeIn(500);
       break;
       
   }
-  
 }
+
 function playAuditorium(num)
 {
   BGM.pause();
