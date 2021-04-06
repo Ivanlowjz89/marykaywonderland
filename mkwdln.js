@@ -55,6 +55,53 @@ var nsd5src = "https://www.youtube.com/embed/CXz8Wx9V-3w";
 var nsd6src = "https://www.youtube.com/embed/k6IaeQbLfmc";
 var nsd7src = "https://www.youtube.com/embed/_Wyfv6DRabs";
 
+var mynd1src = "https://player.vimeo.com/video/533437671";
+var mynd2src = "https://player.vimeo.com/video/533440173";
+var mynd3src = "https://player.vimeo.com/video/533440078";
+
+var mysa1src = "https://player.vimeo.com/video/533439922";
+var mysa2src = "https://player.vimeo.com/video/533439968";
+var mysa3src = "https://player.vimeo.com/video/533439183";
+var mysa4src = "https://player.vimeo.com/video/533439654";
+var mysa5src = "https://player.vimeo.com/video/533441468";
+
+var mysaot1src = "https://player.vimeo.com/video/533446851";
+var mysaot2src = "https://player.vimeo.com/video/533447137";
+var mysaot3src = "https://player.vimeo.com/video/533447621";
+var mysaot4src = "https://player.vimeo.com/video/533445693";
+var mysaot5src = "https://player.vimeo.com/video/533446224";
+var mysaot6src = "https://player.vimeo.com/video/533446607";
+
+var mynsdsrc = "https://player.vimeo.com/video/533443805";
+
+var mymoveup1src = "https://player.vimeo.com/video/533444435";
+var mymoveup2src = "https://player.vimeo.com/video/533445370";
+var mymoveup3src = "https://player.vimeo.com/video/533444194";
+
+var myleadsrc = "https://player.vimeo.com/video/533448900";
+
+var mycar1src = "https://player.vimeo.com/video/533435967";
+var mycar2src = "https://player.vimeo.com/video/533436052";
+var mycar3src = "https://player.vimeo.com/video/533436112";
+var mycar4src = "https://player.vimeo.com/video/533436148";
+
+var sgndsrc = "https://player.vimeo.com/video/533449849";
+
+var sgsa1src = "https://player.vimeo.com/video/533450659";
+var sgsa2src = "https://player.vimeo.com/video/533450735";
+
+var sgsaot1src = "https://player.vimeo.com/video/533450798";
+var sgsaot2src = "https://player.vimeo.com/video/533450923";
+var sgsaot3src = "https://player.vimeo.com/video/533451025";
+var sgsaot4src = "https://player.vimeo.com/video/533450403";
+var sgsaot5src = "https://player.vimeo.com/video/533450493";
+var sgsaot6src = "https://player.vimeo.com/video/533450574";
+
+var sgmoveup1src = "https://player.vimeo.com/video/533450350";
+var sgmoveup2src = "https://player.vimeo.com/video/533450273";
+
+var sgleadsrc = "https://player.vimeo.com/video/533449791";
+
 var quote1 = "images/MKFacts-01.jpg";
 var quote2 = "images/MKFacts-02.jpg";
 var quote3 = "images/MKFacts-03.jpg";
@@ -269,6 +316,220 @@ $('#appFrame').fadeIn(500);
 
 }
 
+function playMYND(num)
+{
+  
+  switch(num)
+  {
+    case 1:
+      $('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
+      $('#videoiframe').attr('src', mynd1src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      
+      case 2:
+      $('#videoFrameText').text("NEW EXECUTIVE SALES DIRECTOR DEBUT");
+      $('#videoiframe').attr('src', mynd2src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      
+      case 3:
+      $('#videoFrameText').text("NEW ELITE EXECUTIVE SALES DIRECTOR DEBUT");
+      $('#videoiframe').attr('src', mynd3src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  }
+  
+}
+
+function playMYSA1(num)
+{
+  switch(num)
+  {
+  case 1:
+      $('#videoFrameText').text("COPS BC");
+      $('#videoiframe').attr('src', mysa1src);
+      $('#videoFrame').fadeIn(500);
+      break;
+   case 2:
+      $('#videoFrameText').text("COPS SD");
+      $('#videoiframe').attr('src', mysa2src);
+      $('#videoFrame').fadeIn(500);
+      break;
+   case 3:
+      $('#videoFrameText').text("COA 155K");
+      $('#videoiframe').attr('src', mysa3src);
+      $('#videoFrame').fadeIn(500);
+      break;
+   case 4:
+      $('#videoFrameText').text("COA 251K");
+      $('#videoiframe').attr('src', mysa4src);
+      $('#videoFrame').fadeIn(500);
+      break;
+   case 5:
+      $('#videoFrameText').text("COE & TDT");
+      $('#videoiframe').attr('src', mysa5src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  }
+}
+
+function playMYSA2(num)
+{
+  switch(num)
+  {
+  case 1:
+      $('#videoFrameText').text("COPS BC");
+      $('#videoiframe').attr('src', mysaot1src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  case 2:
+      $('#videoFrameText').text("COPS SD");
+      $('#videoiframe').attr('src', mysaot2src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  case 3:
+      $('#videoFrameText').text("COA 155K");
+      $('#videoiframe').attr('src', mysaot4src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  case 4:
+      $('#videoFrameText').text("COA 251K");
+      $('#videoiframe').attr('src', mysaot5src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  case 5:
+      $('#videoFrameText').text("COS");
+      $('#videoiframe').attr('src', mysaot3src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  case 6:
+      $('#videoFrameText').text("COE & TDT");
+      $('#videoiframe').attr('src', mysaot6src);
+      $('#videoFrame').fadeIn(500);
+      break;
+  }
+}
+
+function playMYNSD()
+{ 
+  $('#videoFrameText').text("NSD IN MAKING");
+  $('#videoiframe').attr('src', mynsdsrc);
+  $('#videoFrame').fadeIn(500); 
+}
+
+function playMYLead()
+{
+  $('#videoFrameText').text("LEAD PROGRAMS");
+  $('#videoiframe').attr('src', myleadsrc);
+  $('#videoFrame').fadeIn(500);
+}
+
+function playMYMoveUp(num)
+{
+  switch(num)
+  {
+    case 1:
+        $('#videoFrameText').text("TEAM LEADER");
+        $('#videoiframe').attr('src', mymoveup1src);
+        $('#videoFrame').fadeIn(500);
+    break;
+      
+    case 2:
+      $('#videoFrameText').text("FUTURE INDEPENDENT SALES DIRECTOR");
+      $('#videoiframe').attr('src', mymoveup2src);
+      $('#videoFrame').fadeIn(500);
+    break;
+      
+    case 3:
+      $('#videoFrameText').text("DIRECTOR IN QUALIFICATION");
+      $('#videoiframe').attr('src', mymoveup3src);
+      $('#videoFrame').fadeIn(500);
+    break;
+  }
+}
+
+function playMYCar(num)
+{
+  switch(num)
+  {
+  case 1:
+      $('#videoFrameText').text("TOYOTA ALTIS");
+      $('#videoiframe').attr('src', mycar1src);
+      $('#videoFrame').fadeIn(500);
+    break;
+  
+  case 2:
+      $('#videoFrameText').text("HONDA JAZZ");
+      $('#videoiframe').attr('src', mycar3src);
+      $('#videoFrame').fadeIn(500);
+    break;
+  
+  case 3:
+      $('#videoFrameText').text("TOYOTA AVANZA");
+      $('#videoiframe').attr('src', mycar2src);
+      $('#videoFrame').fadeIn(500);
+    break;
+  
+  case 4:
+      $('#videoFrameText').text("TOYOTA YARIS");
+      $('#videoiframe').attr('src', mycar4src);
+      $('#videoFrame').fadeIn(500);
+    break;
+  }
+}
+
+function playSGLead()
+{
+  $('#videoFrameText').text("LEAD PROGRAM");
+  $('#videoiframe').attr('src', sgleadsrc);
+  $('#videoFrame').fadeIn(500);
+  
+}
+
+function playSGND()
+{
+  $('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
+  $('#videoiframe').attr('src', sgleadsrc);
+  $('#videoFrame').fadeIn(500);
+}
+
+function playSGMoveUp(num)
+{
+  switch(num)
+  {
+    
+      case 1:
+      $('#videoFrameText').text("TEAM LEADER");
+      $('#videoiframe').attr('src', sgmoveup1src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      
+      case 2:
+      $('#videoFrameText').text("DIRECTOR IN QUALIFICATION");
+      $('#videoiframe').attr('src', sgmoveup2src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      
+  }
+  
+}
+
+function playSGSA1(num)
+{ 
+  
+  switch(num)
+  {
+   
+    case 1:
+      $('#videoFrameText').text("TEAM LEADER");
+      $('#videoiframe').attr('src', sgmoveup1src);
+      $('#videoFrame').fadeIn(500);
+      break;
+      
+  }
+  
+}
 function playAuditorium(num)
 {
 
