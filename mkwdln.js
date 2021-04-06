@@ -185,6 +185,7 @@ BGM.play();
 $('#closeButtonVideo').click(function()
 {	
 clickSound.play();
+  BGM.play();
 $('#videoiframe').attr('src', 'about:blank');
 $('#videoFrame').fadeOut(500);
 });
@@ -319,6 +320,7 @@ $('#appFrame').fadeIn(500);
 function playMYND(num)
 {
   
+  BGM.pause();
   switch(num)
   {
     case 1:
@@ -344,6 +346,7 @@ function playMYND(num)
 
 function playMYSA1(num)
 {
+  BGM.pause();
   switch(num)
   {
   case 1:
@@ -376,6 +379,7 @@ function playMYSA1(num)
 
 function playMYSA2(num)
 {
+  BGM.pause();
   switch(num)
   {
   case 1:
@@ -413,6 +417,7 @@ function playMYSA2(num)
 
 function playMYNSD()
 { 
+  BGM.pause();
   $('#videoFrameText').text("NSD IN MAKING");
   $('#videoiframe').attr('src', mynsdsrc);
   $('#videoFrame').fadeIn(500); 
@@ -420,6 +425,7 @@ function playMYNSD()
 
 function playMYLead()
 {
+  BGM.pause();
   $('#videoFrameText').text("LEAD PROGRAMS");
   $('#videoiframe').attr('src', myleadsrc);
   $('#videoFrame').fadeIn(500);
@@ -427,6 +433,7 @@ function playMYLead()
 
 function playMYMoveUp(num)
 {
+  BGM.pause();
   switch(num)
   {
     case 1:
@@ -451,6 +458,7 @@ function playMYMoveUp(num)
 
 function playMYCar(num)
 {
+  BGM.pause();
   switch(num)
   {
   case 1:
@@ -481,6 +489,7 @@ function playMYCar(num)
 
 function playSGLead()
 {
+  BGM.pause();
   $('#videoFrameText').text("LEAD PROGRAM");
   $('#videoiframe').attr('src', sgleadsrc);
   $('#videoFrame').fadeIn(500);
@@ -489,6 +498,7 @@ function playSGLead()
 
 function playSGND()
 {
+  BGM.pause();
   $('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
   $('#videoiframe').attr('src', sgleadsrc);
   $('#videoFrame').fadeIn(500);
@@ -496,6 +506,7 @@ function playSGND()
 
 function playSGMoveUp(num)
 {
+  BGM.pause();
   switch(num)
   {
     
@@ -517,7 +528,7 @@ function playSGMoveUp(num)
 
 function playSGSA1(num)
 { 
-  
+  BGM.pause();
   switch(num)
   {
    
@@ -532,7 +543,7 @@ function playSGSA1(num)
 }
 function playAuditorium(num)
 {
-
+  BGM.pause();
   switch(num)
   {
     
@@ -582,7 +593,7 @@ function playAuditorium(num)
 
 function playNSD(num)
 {
-
+  BGM.pause();
   switch(num)
   {
     
