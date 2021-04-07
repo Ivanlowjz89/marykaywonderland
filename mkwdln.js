@@ -231,6 +231,18 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 });
 
+window.addEventListener('focus',()=>{
+  
+  BGM.play();
+  
+}
+                        
+window.addEventListener('blur',()=>{
+  
+  BGM.pause();
+  
+}
+
 function openMickMock()
 {
 clickSound.play();
@@ -401,6 +413,8 @@ break;
 
 function playLipGloss()
 {
+  clickSound.play();
+BGM.pause();
 $('#videoFrameText').text("UNLIMITED LIP GLOSS");
 $('#videoiframe').attr('src', lipglosssrc);
 $('#videoFrame').fadeIn(500); 
@@ -408,6 +422,8 @@ $('#videoFrame').fadeIn(500);
 
 function playTimeWise()
 {
+  clickSound.play();
+BGM.pause();
 $('#videoFrameText').text("TIMEWISE REPLENISHING SERUM C + E");
 $('#videoiframe').attr('src', timewisesrc);
 $('#videoFrame').fadeIn(500); 
