@@ -108,6 +108,12 @@ var wmk1src = "https://player.vimeo.com/video/528133535";
 var wmk2src = "https://player.vimeo.com/video/528133584";
 var wmk3src = "https://player.vimeo.com/video/528133657";
 
+//Lucky Draw
+var ld1src = "https://player.vimeo.com/video/533576207";
+var ld2src = "https://player.vimeo.com/video/533579623";
+var ld3src = "https://player.vimeo.com/video/533579401";
+var ld4src = "https://player.vimeo.com/video/533578658";
+
 //Quotes
 var quote1 = "images/MKFacts-01.jpg";
 var quote2 = "images/MKFacts-02.jpg";
@@ -175,24 +181,20 @@ $('#buttonLogout').click(function()
 //Audio
 $('#playAudioButton').click(function()
 {
-
 $('#audioBlocker').fadeOut(500);
 BGM.play();
-
 });
 
 $('#audioBlocker').click(function()
 {
-
 $('#audioBlocker').fadeOut(500);
 BGM.play();
-  
 });
 
 $('#closeButtonVideo').click(function()
 {	
 clickSound.play();
-  BGM.play();
+BGM.play();
 $('#videoiframe').attr('src', 'about:blank');
 $('#videoFrame').fadeOut(500);
 });
@@ -318,6 +320,37 @@ clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumPublicsrc);
 $('#appFrame').fadeIn(500);
+}
+
+function playLD(num)
+{
+  clickSound.play();
+  BGM.pause();
+  switch(num)
+  {
+    case 1:
+    $('#videoFrameText').text("1ST LUCKY DRAW");
+    $('#videoiframe').attr('src', ld1src);
+    $('#videoFrame').fadeIn(500);
+    break;
+      
+    case 2:
+    $('#videoFrameText').text("2ND LUCKY DRAW");
+    $('#videoiframe').attr('src', ld2src);
+    $('#videoFrame').fadeIn(500);
+    break;
+      
+    case 3:
+    $('#videoFrameText').text("3RD LUCKY DRAW");
+    $('#videoiframe').attr('src', ld3src);
+    $('#videoFrame').fadeIn(500);
+    break;
+      
+    case 4:
+    $('#videoFrameText').text("EARLY BIRDS");
+    $('#videoiframe').attr('src', ld4src);
+    $('#videoFrame').fadeIn(500);
+    break;
 }
 
 function playLuis()
