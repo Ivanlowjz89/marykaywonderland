@@ -7,27 +7,27 @@ initAvatars();
 
 async function initAvatars()
 {
-  
+
 var getAvatarPhoto = await checkPhotos();
 if(getAvatarPhoto.photos != null)
 {
-  avatarPhoto = getAvatarPhoto.photos;
+avatarPhoto = getAvatarPhoto.photos;
 }
 else
 {
-  alert("Error fetching your photo! Please refresh and try again!"); 
+alert("Error fetching your photo! Please refresh and try again!"); 
 }
 
 var getAvatarImage = await checkAvatar();
 
 if(getAvatarImage.avatar != null)
 {
-  $('#avatarImage').attr('src', getAvatarImage.avatar);
-  avatarImageContainer = getAvatarImage.avatar;
+$('#avatarImage').attr('src', getAvatarImage.avatar);
+avatarImageContainer = getAvatarImage.avatar;
 }
 else
 {
-  alert("Error fetching your avatar! Please refresh and try again!"); 
+alert("Error fetching your avatar! Please refresh and try again!"); 
 }
 
 }
@@ -170,17 +170,17 @@ a.click();
 //Photobooth
 $('#buttonPhotobooth').click(function()
 {
-  clickSound.play();
-  startCamera(avatarImageContainer);
+clickSound.play();
+startCamera(avatarImageContainer);
 });
-                             
+
 //Logout
 $('#buttonLogout').click(function()
 {
-  clickSound.play();
-  window.open("https://staging.marykaymysgcc2021.com/users/sign_out", "_self");
+clickSound.play();
+window.open("https://www.marykaymysgcc2021.com/users/sign_out", "_self");
 });
-                             
+
 //Audio
 $('#playAudioButton').click(function()
 {
@@ -237,7 +237,7 @@ clickSound.play();
 $('#appFrameText').text("MICK MOCK");
 $('#appiframe').attr('src', mmsrc);
 $('#appFrame').fadeIn(500);
-  
+
 }
 
 function openRecognition()
@@ -294,11 +294,11 @@ clickSound.play();
 var checkUserType = await checkUser();
 if(checkUserType.type == "user")
 {
-  openAuditoriumIBC();
+openAuditoriumIBC();
 }
 else
 {
-  openAuditoriumPublic();
+openAuditoriumPublic();
 }
 }
 
@@ -318,473 +318,474 @@ $('#appFrame').fadeIn(500);
 
 function playLD(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-    case 1:
-    $('#videoFrameText').text("1ST LUCKY DRAW");
-    $('#videoiframe').attr('src', ld1src);
-    $('#videoFrame').fadeIn(500);
-    break;
-      
-    case 2:
-    $('#videoFrameText').text("2ND LUCKY DRAW");
-    $('#videoiframe').attr('src', ld2src);
-    $('#videoFrame').fadeIn(500);
-    break;
-      
-    case 3:
-    $('#videoFrameText').text("3RD LUCKY DRAW");
-    $('#videoiframe').attr('src', ld3src);
-    $('#videoFrame').fadeIn(500);
-    break;
-      
-    case 4:
-    $('#videoFrameText').text("EARLY BIRDS");
-    $('#videoiframe').attr('src', ld4src);
-    $('#videoFrame').fadeIn(500);
-    break;
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("1ST LUCKY DRAW");
+$('#videoiframe').attr('src', ld1src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 2:
+$('#videoFrameText').text("2ND LUCKY DRAW");
+$('#videoiframe').attr('src', ld2src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 3:
+$('#videoFrameText').text("3RD LUCKY DRAW");
+$('#videoiframe').attr('src', ld3src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 4:
+$('#videoFrameText').text("EARLY BIRDS");
+$('#videoiframe').attr('src', ld4src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playLuis()
 {
-  clickSound.play();
-   BGM.pause();
-    $('#videoFrameText').text("LUIS CASCO, MARY KAY GLOBAL BRAND AMBASSADOR");
-    $('#videoiframe').attr('src', luissrc);
-    $('#videoFrame').fadeIn(500);
+clickSound.play();
+BGM.pause();
+$('#videoFrameText').text("LUIS CASCO, MARY KAY GLOBAL BRAND AMBASSADOR");
+$('#videoiframe').attr('src', luissrc);
+$('#videoFrame').fadeIn(500);
 }
 
 function playMicellarWater()
 { 
-  clickSound.play();
-  BGM.pause();
-  $('#videoFrameText').text("MICELLAR WATER");
-  $('#videoiframe').attr('src', micellarsrc);
-  $('#videoFrame').fadeIn(500); 
+clickSound.play();
+BGM.pause();
+$('#videoFrameText').text("MICELLAR WATER");
+$('#videoiframe').attr('src', micellarsrc);
+$('#videoFrame').fadeIn(500); 
 }
 
 function playIlluminea()
 { 
-  clickSound.play();
-  BGM.pause();
-  $('#videoFrameText').text("ILLUMINEA EDP");
-  $('#videoiframe').attr('src', illumineasrc);
-  $('#videoFrame').fadeIn(500); 
+clickSound.play();
+BGM.pause();
+$('#videoFrameText').text("ILLUMINEA EDP");
+$('#videoiframe').attr('src', illumineasrc);
+$('#videoFrame').fadeIn(500); 
 }
 
 function playWMK(num)
 { 
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-    case 1:
-    $('#videoFrameText').text("INNOVATIVE SKIN CARE");
-    $('#videoiframe').attr('src', wmk1src);
-    $('#videoFrame').fadeIn(500); 
-   break;
-       case 2:
-    $('#videoFrameText').text("MARY KAY R3 FACILITIES");
-    $('#videoiframe').attr('src', wmk2src);
-    $('#videoFrame').fadeIn(500); 
-   break;
-       case 3:
-    $('#videoFrameText').text("PATENT TECHNOLOGY");
-    $('#videoiframe').attr('src', wmk3src);
-    $('#videoFrame').fadeIn(500); 
-   break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("INNOVATIVE SKIN CARE");
+$('#videoiframe').attr('src', wmk1src);
+$('#videoFrame').fadeIn(500); 
+break;
+case 2:
+$('#videoFrameText').text("MARY KAY R3 FACILITIES");
+$('#videoiframe').attr('src', wmk2src);
+$('#videoFrame').fadeIn(500); 
+break;
+case 3:
+$('#videoFrameText').text("PATENT TECHNOLOGY");
+$('#videoiframe').attr('src', wmk3src);
+$('#videoFrame').fadeIn(500); 
+break;
+}
 }
 
 function playLipGloss()
 {
-   $('#videoFrameText').text("UNLIMITED LIP GLOSS");
-   $('#videoiframe').attr('src', lipglosssrc);
-   $('#videoFrame').fadeIn(500); 
+$('#videoFrameText').text("UNLIMITED LIP GLOSS");
+$('#videoiframe').attr('src', lipglosssrc);
+$('#videoFrame').fadeIn(500); 
 }
 
 function playTimeWise()
 {
-   $('#videoFrameText').text("TIMEWISE REPLENISHING SERUM C + E");
-   $('#videoiframe').attr('src', timewisesrc);
-   $('#videoFrame').fadeIn(500); 
+$('#videoFrameText').text("TIMEWISE REPLENISHING SERUM C + E");
+$('#videoiframe').attr('src', timewisesrc);
+$('#videoFrame').fadeIn(500); 
 }
 
 function playMYND(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-    case 1:
-      $('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
-      $('#videoiframe').attr('src', mynd1src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      
-      case 2:
-      $('#videoFrameText').text("NEW EXECUTIVE SALES DIRECTOR DEBUT");
-      $('#videoiframe').attr('src', mynd2src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      
-      case 3:
-      $('#videoFrameText').text("NEW ELITE EXECUTIVE SALES DIRECTOR DEBUT");
-      $('#videoiframe').attr('src', mynd3src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
+$('#videoiframe').attr('src', mynd1src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 2:
+$('#videoFrameText').text("NEW EXECUTIVE SALES DIRECTOR DEBUT");
+$('#videoiframe').attr('src', mynd2src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 3:
+$('#videoFrameText').text("NEW ELITE EXECUTIVE SALES DIRECTOR DEBUT");
+$('#videoiframe').attr('src', mynd3src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playMYSA1(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-  case 1:
-      $('#videoFrameText').text("COPS BC");
-      $('#videoiframe').attr('src', mysa1src);
-      $('#videoFrame').fadeIn(500);
-      break;
-   case 2:
-      $('#videoFrameText').text("COPS SD");
-      $('#videoiframe').attr('src', mysa2src);
-      $('#videoFrame').fadeIn(500);
-      break;
-   case 3:
-      $('#videoFrameText').text("COA 155K");
-      $('#videoiframe').attr('src', mysa3src);
-      $('#videoFrame').fadeIn(500);
-      break;
-   case 4:
-      $('#videoFrameText').text("COA 251K");
-      $('#videoiframe').attr('src', mysa4src);
-      $('#videoFrame').fadeIn(500);
-      break;
-   case 5:
-      $('#videoFrameText').text("COE & TDT");
-      $('#videoiframe').attr('src', mysa5src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("COPS BC");
+$('#videoiframe').attr('src', mysa1src);
+$('#videoFrame').fadeIn(500);
+break;
+case 2:
+$('#videoFrameText').text("COPS SD");
+$('#videoiframe').attr('src', mysa2src);
+$('#videoFrame').fadeIn(500);
+break;
+case 3:
+$('#videoFrameText').text("COA 155K");
+$('#videoiframe').attr('src', mysa3src);
+$('#videoFrame').fadeIn(500);
+break;
+case 4:
+$('#videoFrameText').text("COA 251K");
+$('#videoiframe').attr('src', mysa4src);
+$('#videoFrame').fadeIn(500);
+break;
+case 5:
+$('#videoFrameText').text("COE & TDT");
+$('#videoiframe').attr('src', mysa5src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playMYSA2(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-  case 1:
-      $('#videoFrameText').text("COPS BC");
-      $('#videoiframe').attr('src', mysaot1src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  case 2:
-      $('#videoFrameText').text("COPS SD");
-      $('#videoiframe').attr('src', mysaot2src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  case 3:
-      $('#videoFrameText').text("COA 155K");
-      $('#videoiframe').attr('src', mysaot4src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  case 4:
-      $('#videoFrameText').text("COA 251K");
-      $('#videoiframe').attr('src', mysaot5src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  case 5:
-      $('#videoFrameText').text("COS");
-      $('#videoiframe').attr('src', mysaot3src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  case 6:
-      $('#videoFrameText').text("COE & TDT");
-      $('#videoiframe').attr('src', mysaot6src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("COPS BC");
+$('#videoiframe').attr('src', mysaot1src);
+$('#videoFrame').fadeIn(500);
+break;
+case 2:
+$('#videoFrameText').text("COPS SD");
+$('#videoiframe').attr('src', mysaot2src);
+$('#videoFrame').fadeIn(500);
+break;
+case 3:
+$('#videoFrameText').text("COA 155K");
+$('#videoiframe').attr('src', mysaot4src);
+$('#videoFrame').fadeIn(500);
+break;
+case 4:
+$('#videoFrameText').text("COA 251K");
+$('#videoiframe').attr('src', mysaot5src);
+$('#videoFrame').fadeIn(500);
+break;
+case 5:
+$('#videoFrameText').text("COS");
+$('#videoiframe').attr('src', mysaot3src);
+$('#videoFrame').fadeIn(500);
+break;
+case 6:
+$('#videoFrameText').text("COE & TDT");
+$('#videoiframe').attr('src', mysaot6src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playMYNSD()
 { 
-  clickSound.play();
-  BGM.pause();
-  $('#videoFrameText').text("NSD IN MAKING");
-  $('#videoiframe').attr('src', mynsdsrc);
-  $('#videoFrame').fadeIn(500); 
+clickSound.play();
+BGM.pause();
+$('#videoFrameText').text("NSD IN MAKING");
+$('#videoiframe').attr('src', mynsdsrc);
+$('#videoFrame').fadeIn(500); 
 }
 
 function playMYLead()
 {
-  clickSound.play();
-  BGM.pause();
-  $('#videoFrameText').text("LEAD PROGRAMS");
-  $('#videoiframe').attr('src', myleadsrc);
-  $('#videoFrame').fadeIn(500);
+clickSound.play();
+BGM.pause();
+$('#videoFrameText').text("LEAD PROGRAMS");
+$('#videoiframe').attr('src', myleadsrc);
+$('#videoFrame').fadeIn(500);
 }
 
 function playMYMoveUp(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-    case 1:
-        $('#videoFrameText').text("TEAM LEADER");
-        $('#videoiframe').attr('src', mymoveup1src);
-        $('#videoFrame').fadeIn(500);
-    break;
-      
-    case 2:
-      $('#videoFrameText').text("FUTURE INDEPENDENT SALES DIRECTOR");
-      $('#videoiframe').attr('src', mymoveup2src);
-      $('#videoFrame').fadeIn(500);
-    break;
-      
-    case 3:
-      $('#videoFrameText').text("DIRECTOR IN QUALIFICATION");
-      $('#videoiframe').attr('src', mymoveup3src);
-      $('#videoFrame').fadeIn(500);
-    break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("TEAM LEADER");
+$('#videoiframe').attr('src', mymoveup1src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 2:
+$('#videoFrameText').text("FUTURE INDEPENDENT SALES DIRECTOR");
+$('#videoiframe').attr('src', mymoveup2src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 3:
+$('#videoFrameText').text("DIRECTOR IN QUALIFICATION");
+$('#videoiframe').attr('src', mymoveup3src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playMYCar(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-  case 1:
-      $('#videoFrameText').text("TOYOTA ALTIS");
-      $('#videoiframe').attr('src', mycar1src);
-      $('#videoFrame').fadeIn(500);
-    break;
-  
-  case 2:
-      $('#videoFrameText').text("HONDA JAZZ");
-      $('#videoiframe').attr('src', mycar3src);
-      $('#videoFrame').fadeIn(500);
-    break;
-  
-  case 3:
-      $('#videoFrameText').text("TOYOTA AVANZA");
-      $('#videoiframe').attr('src', mycar2src);
-      $('#videoFrame').fadeIn(500);
-    break;
-  
-  case 4:
-      $('#videoFrameText').text("TOYOTA YARIS");
-      $('#videoiframe').attr('src', mycar4src);
-      $('#videoFrame').fadeIn(500);
-    break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("TOYOTA ALTIS");
+$('#videoiframe').attr('src', mycar1src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 2:
+$('#videoFrameText').text("HONDA JAZZ");
+$('#videoiframe').attr('src', mycar3src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 3:
+$('#videoFrameText').text("TOYOTA AVANZA");
+$('#videoiframe').attr('src', mycar2src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 4:
+$('#videoFrameText').text("TOYOTA YARIS");
+$('#videoiframe').attr('src', mycar4src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playSGLead()
 {
-  clickSound.play();
-  BGM.pause();
-  $('#videoFrameText').text("LEAD PROGRAM");
-  $('#videoiframe').attr('src', sgleadsrc);
-  $('#videoFrame').fadeIn(500);
+clickSound.play();
+BGM.pause();
+$('#videoFrameText').text("LEAD PROGRAM");
+$('#videoiframe').attr('src', sgleadsrc);
+$('#videoFrame').fadeIn(500);
 }
 
 function playSGND()
 {
-  clickSound.play();
-  BGM.pause();
-  $('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
-  $('#videoiframe').attr('src', sgleadsrc);
-  $('#videoFrame').fadeIn(500);
+clickSound.play();
+BGM.pause();
+$('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
+$('#videoiframe').attr('src', sgleadsrc);
+$('#videoFrame').fadeIn(500);
 }
 
 function playSGMoveUp(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-      case 1:
-      $('#videoFrameText').text("TEAM LEADER");
-      $('#videoiframe').attr('src', sgmoveup1src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      
-      case 2:
-      $('#videoFrameText').text("DIRECTOR IN QUALIFICATION");
-      $('#videoiframe').attr('src', sgmoveup2src);
-      $('#videoFrame').fadeIn(500);
-      break; 
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("TEAM LEADER");
+$('#videoiframe').attr('src', sgmoveup1src);
+$('#videoFrame').fadeIn(500);
+break;
+
+case 2:
+$('#videoFrameText').text("DIRECTOR IN QUALIFICATION");
+$('#videoiframe').attr('src', sgmoveup2src);
+$('#videoFrame').fadeIn(500);
+break; 
+}
 }
 
 function playSGSA1(num)
 { 
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-    case 1:
-      $('#videoFrameText').text("COPS BC");
-      $('#videoiframe').attr('src', sgsa1src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 2:
-      $('#videoFrameText').text("COPS SD");
-      $('#videoiframe').attr('src', sgsa2src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 3:
-      $('#videoFrameText').text("COA 155K");
-      $('#videoiframe').attr('src', sgsa3src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 4:
-      $('#videoFrameText').text("COA 251K");
-      $('#videoiframe').attr('src', sgsa4src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("COPS BC");
+$('#videoiframe').attr('src', sgsa1src);
+$('#videoFrame').fadeIn(500);
+break;
+case 2:
+$('#videoFrameText').text("COPS SD");
+$('#videoiframe').attr('src', sgsa2src);
+$('#videoFrame').fadeIn(500);
+break;
+case 3:
+$('#videoFrameText').text("COA 155K");
+$('#videoiframe').attr('src', sgsa3src);
+$('#videoFrame').fadeIn(500);
+break;
+case 4:
+$('#videoFrameText').text("COA 251K");
+$('#videoiframe').attr('src', sgsa4src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playSGSA2(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-      case 1:
-      $('#videoFrameText').text("COPS BC");
-      $('#videoiframe').attr('src', sgsaot1src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 2:
-      $('#videoFrameText').text("COPS SD");
-      $('#videoiframe').attr('src', sgsaot2src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 3:
-      $('#videoFrameText').text("COA 155K");
-      $('#videoiframe').attr('src', sgsaot4src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 4:
-      $('#videoFrameText').text("COA 251K");
-      $('#videoiframe').attr('src', sgsaot5src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 5:
-      $('#videoFrameText').text("COS");
-      $('#videoiframe').attr('src', sgsaot3src);
-      $('#videoFrame').fadeIn(500);
-      break;
-      case 6:
-      $('#videoFrameText').text("COE & TDT");
-      $('#videoiframe').attr('src', sgsaot6src);
-      $('#videoFrame').fadeIn(500);
-      break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1:
+$('#videoFrameText').text("COPS BC");
+$('#videoiframe').attr('src', sgsaot1src);
+$('#videoFrame').fadeIn(500);
+break;
+case 2:
+$('#videoFrameText').text("COPS SD");
+$('#videoiframe').attr('src', sgsaot2src);
+$('#videoFrame').fadeIn(500);
+break;
+case 3:
+$('#videoFrameText').text("COA 155K");
+$('#videoiframe').attr('src', sgsaot4src);
+$('#videoFrame').fadeIn(500);
+break;
+case 4:
+$('#videoFrameText').text("COA 251K");
+$('#videoiframe').attr('src', sgsaot5src);
+$('#videoFrame').fadeIn(500);
+break;
+case 5:
+$('#videoFrameText').text("COS");
+$('#videoiframe').attr('src', sgsaot3src);
+$('#videoFrame').fadeIn(500);
+break;
+case 6:
+$('#videoFrameText').text("COE & TDT");
+$('#videoiframe').attr('src', sgsaot6src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 function playAuditorium(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-    case 1 :
-      $('#videoFrameText').text("FOUND MY HAPPINESS THROUGH BEAUTY");
-      $('#videoiframe').attr('src', auditorium1src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 2 :
-      $('#videoFrameText').text("MAKING MY BUSINESS A REAL BUSINESS");
-      $('#videoiframe').attr('src', auditorium2src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 3 :
-      $('#videoFrameText').text("DARE TO DREAM AND CHANGE MY LIFE");
-      $('#videoiframe').attr('src', auditorium3src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 4:
-      $('#videoFrameText').text("DRIVING MY PINK WHEELS TO SUCCESS");
-      $('#videoiframe').attr('src', auditorium4src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 5 :
-      $('#videoFrameText').text("STRETCHING BEYOND MY LIMITS");
-      $('#videoiframe').attr('src', auditorium5src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 6 :
-      $('#videoFrameText').text("GROWING MY UNIT DURING PANDEMIC");
-      $('#videoiframe').attr('src', auditorium6src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 7 :
-      $('#videoFrameText').text("START SOMETHING BEAUTIFUL");
-      $('#videoiframe').attr('src', auditorium7src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 8 :
-      $('#videoFrameText').text("START SOMETHING BEAUTIFUL");
-      $('#videoiframe').attr('src', auditorium8src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1 :
+$('#videoFrameText').text("FOUND MY HAPPINESS THROUGH BEAUTY");
+$('#videoiframe').attr('src', auditorium1src);
+$('#videoFrame').fadeIn(500);
+break;
+case 2 :
+$('#videoFrameText').text("MAKING MY BUSINESS A REAL BUSINESS");
+$('#videoiframe').attr('src', auditorium2src);
+$('#videoFrame').fadeIn(500);
+break;
+case 3 :
+$('#videoFrameText').text("DARE TO DREAM AND CHANGE MY LIFE");
+$('#videoiframe').attr('src', auditorium3src);
+$('#videoFrame').fadeIn(500);
+break;
+case 4:
+$('#videoFrameText').text("DRIVING MY PINK WHEELS TO SUCCESS");
+$('#videoiframe').attr('src', auditorium4src);
+$('#videoFrame').fadeIn(500);
+break;
+case 5 :
+$('#videoFrameText').text("STRETCHING BEYOND MY LIMITS");
+$('#videoiframe').attr('src', auditorium5src);
+$('#videoFrame').fadeIn(500);
+break;
+case 6 :
+$('#videoFrameText').text("GROWING MY UNIT DURING PANDEMIC");
+$('#videoiframe').attr('src', auditorium6src);
+$('#videoFrame').fadeIn(500);
+break;
+case 7 :
+$('#videoFrameText').text("START SOMETHING BEAUTIFUL");
+$('#videoiframe').attr('src', auditorium7src);
+$('#videoFrame').fadeIn(500);
+break;
+case 8 :
+$('#videoFrameText').text("START SOMETHING BEAUTIFUL");
+$('#videoiframe').attr('src', auditorium8src);
+$('#videoFrame').fadeIn(500);
+break;
+
+}
 }
 
 function playNSD(num)
 {
-  clickSound.play();
-  BGM.pause();
-  switch(num)
-  {
-    case 1 :
-      $('#videoFrameText').text("NAFISAH OMAR");
-      $('#videoiframe').attr('src', nsd1src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 2 :   
-      $('#videoFrameText').text("JANE LEE EAN TIN");
-      $('#videoiframe').attr('src', nsd2src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 3 :
-      $('#videoFrameText').text("ROBIAH HURI");
-      $('#videoiframe').attr('src', nsd3src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 4:
-      $('#videoFrameText').text("NURUL SHAKIRIN LEWIS");
-      $('#videoiframe').attr('src', nsd4src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 5 :
-      $('#videoFrameText').text("SUHAIDAH SHEILA");
-      $('#videoiframe').attr('src', nsd5src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 6 :  
-      $('#videoFrameText').text("NORRAZEAN ABDUL RAHMAN");
-      $('#videoiframe').attr('src', nsd6src);
-      $('#videoFrame').fadeIn(500);
-    break;
-    case 7 :
-      $('#videoFrameText').text("KAHIRUNNISA BINTI MAHFAR ADIB");
-      $('#videoiframe').attr('src', nsd7src);
-      $('#videoFrame').fadeIn(500);
-    break;
-  }
+clickSound.play();
+BGM.pause();
+switch(num)
+{
+case 1 :
+$('#videoFrameText').text("NAFISAH OMAR");
+$('#videoiframe').attr('src', nsd1src);
+$('#videoFrame').fadeIn(500);
+break;
+case 2 :   
+$('#videoFrameText').text("JANE LEE EAN TIN");
+$('#videoiframe').attr('src', nsd2src);
+$('#videoFrame').fadeIn(500);
+break;
+case 3 :
+$('#videoFrameText').text("ROBIAH HURI");
+$('#videoiframe').attr('src', nsd3src);
+$('#videoFrame').fadeIn(500);
+break;
+case 4:
+$('#videoFrameText').text("NURUL SHAKIRIN LEWIS");
+$('#videoiframe').attr('src', nsd4src);
+$('#videoFrame').fadeIn(500);
+break;
+case 5 :
+$('#videoFrameText').text("SUHAIDAH SHEILA");
+$('#videoiframe').attr('src', nsd5src);
+$('#videoFrame').fadeIn(500);
+break;
+case 6 :  
+$('#videoFrameText').text("NORRAZEAN ABDUL RAHMAN");
+$('#videoiframe').attr('src', nsd6src);
+$('#videoFrame').fadeIn(500);
+break;
+case 7 :
+$('#videoFrameText').text("KAHIRUNNISA BINTI MAHFAR ADIB");
+$('#videoiframe').attr('src', nsd7src);
+$('#videoFrame').fadeIn(500);
+break;
+}
 }
 
 async function openQuote1()
