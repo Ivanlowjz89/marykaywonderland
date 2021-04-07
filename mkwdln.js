@@ -219,22 +219,6 @@ clickSound.play();
 $('#menuFrame').fadeOut(500);
 });
 
-if (window.addEventListener) 
-{
-window.addEventListener("message", onMessage, false);        
-} 
-else if (window.attachEvent) 
-{
-window.attachEvent("onmessage", onMessage, false);
-}
-
-function onMessage(event) {
-if (event.origin !== "https://www.wearegladstone.com") return;
-var data = event.data;  
-if (typeof(window[data.func]) == "function") {
-window[data.func].call(null, data.message);
-}
-
 }
 
 //VH
@@ -257,7 +241,7 @@ function openMickMock()
 function openRecognition()
 {
 clickSound.play();
-$('#appFrameText').text("MARY KAY RECOGNITION");
+$('#appFrameText').text("RECOGNITION");
 $('#appiframe').attr('src', recognitionsrc);
 $('#appFrame').fadeIn(500);
 }
@@ -266,7 +250,7 @@ function openProductGallery()
 {
 clickSound.play();
 $('#appFrameText').text("PRODUCT GALLERY");
-$('#appiframe').attr('src', recognitionsrc);
+$('#appiframe').attr('src', ppsrc);
 $('#appFrame').fadeIn(500);
 }
 
@@ -312,7 +296,6 @@ else
 {
   openAuditoriumPublic();
 }
-  
 }
 
 function openAuditoriumIBC()
