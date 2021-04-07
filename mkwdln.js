@@ -33,12 +33,13 @@ else
 }
 
 //Apps
-var auditoriumIBCsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumIBC";
-var auditoriumPublicsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumPublic";
-var universitysrc = "https://staging.marykaymysgcc2021.com/apps/University";
-var nsdsrc = "https://staging.marykaymysgcc2021.com/apps/NSD";
-var ppsrc = "https://staging.marykaymysgcc2021.com/apps/ProductPavilion";
-var recognitionsrc = "https://staging.marykaymysgcc2021.com/apps/Recognition";
+var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
+var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
+var universitysrc = "https://www.marykaymysgcc2021.com/apps/University";
+var nsdsrc = "https://www.marykaymysgcc2021.com/apps/NSD";
+var ppsrc = "https://www.marykaymysgcc2021.com/apps/ProductPavilion";
+var recognitionsrc = "https://www.marykaymysgcc2021.com/apps/Recognition";
+var luckydrawsrc = "https://www.marykaymysgcc2021.com/apps/LuckyDraw";
 
 //Auditorium
 var auditorium1src = "https://player.vimeo.com/video/528128632";
@@ -271,9 +272,10 @@ $('#appFrame').fadeIn(500);
 
 function openLuckyDraw()
 {
-  clickSound.play();
-  console.log("Open Lucky Draw");  
-  
+clickSound.play();
+$('#appFrameText').text("LUCKY DRAW");
+$('#appiframe').attr('src', luckydrawsrc);
+$('#appFrame').fadeIn(500);
 }
 
 function openExcitement()
@@ -301,14 +303,20 @@ $('#appFrame').fadeIn(500);
 function openAuditorium()
 {
 clickSound.play();
-$('#appFrameText').text("AUDITORIUM");
-$('#appiframe').attr('src', auditoriumIBCsrc);
-$('#appFrame').fadeIn(500);
+var checkUserType = await checkUser();
+if(checkUserType.type == "user")
+{
+  openAuditoriumIBC();
+}
+else
+{
+  openAuditoriumPublic();
+}
+  
 }
 
 function openAuditoriumIBC()
 {
-clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumIBCsrc);
 $('#appFrame').fadeIn(500);
@@ -316,7 +324,6 @@ $('#appFrame').fadeIn(500);
 
 function openAuditoriumPublic()
 {
-clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumPublicsrc);
 $('#appFrame').fadeIn(500);
