@@ -100,13 +100,13 @@ var sgleadsrc = "https://player.vimeo.com/video/533449791";
 
 //Product Gallery
 var luissrc = "https://player.vimeo.com/video/533453979";
-var micellarsrc = "";
-var illumineasrc = "";
-var timewisesrc = "";
-var lipglosssrc = "";
-var wmk1src = "";
-var wmk2src = "";
-var wmk3src = "";
+var micellarsrc = "https://player.vimeo.com/video/528754713";
+var illumineasrc = "https://player.vimeo.com/video/528133337";
+var timewisesrc = "https://player.vimeo.com/video/528133400";
+var lipglosssrc = "https://player.vimeo.com/video/528133469";
+var wmk1src = "https://player.vimeo.com/video/528133535";
+var wmk2src = "https://player.vimeo.com/video/528133584";
+var wmk3src = "https://player.vimeo.com/video/528133657";
 
 //Quotes
 var quote1 = "images/MKFacts-01.jpg";
@@ -322,14 +322,72 @@ $('#appFrame').fadeIn(500);
 
 function playLuis()
 {
+  clickSound.play();
    BGM.pause();
     $('#videoFrameText').text("LUIS CASCO, MARY KAY GLOBAL BRAND AMBASSADOR");
     $('#videoiframe').attr('src', luissrc);
     $('#videoFrame').fadeIn(500);
 }
 
+function playMicellarWater()
+{ 
+  clickSound.play();
+  BGM.pause();
+  $('#videoFrameText').text("MICELLAR WATER");
+  $('#videoiframe').attr('src', micellarsrc);
+  $('#videoFrame').fadeIn(500); 
+}
+
+function playIlluminea()
+{ 
+  clickSound.play();
+  BGM.pause();
+  $('#videoFrameText').text("ILLUMINEA EDP");
+  $('#videoiframe').attr('src', illumineasrc);
+  $('#videoFrame').fadeIn(500); 
+}
+
+function playWMK(num)
+{ 
+  clickSound.play();
+  BGM.pause();
+  switch(num)
+  {
+    case 1:
+    $('#videoFrameText').text("INNOVATIVE SKIN CARE");
+    $('#videoiframe').attr('src', wmk1src);
+    $('#videoFrame').fadeIn(500); 
+   break;
+       case 2:
+    $('#videoFrameText').text("MARY KAY R3 FACILITIES");
+    $('#videoiframe').attr('src', wmk2src);
+    $('#videoFrame').fadeIn(500); 
+   break;
+       case 3:
+    $('#videoFrameText').text("PATENT TECHNOLOGY");
+    $('#videoiframe').attr('src', wmk3src);
+    $('#videoFrame').fadeIn(500); 
+   break;
+  }
+}
+
+function playLipGloss()
+{
+   $('#videoFrameText').text("UNLIMITED LIP GLOSS");
+   $('#videoiframe').attr('src', lipglosssrc);
+   $('#videoFrame').fadeIn(500); 
+}
+
+function playTimeWise()
+{
+   $('#videoFrameText').text("TIMEWISE REPLENISHING SERUM C + E");
+   $('#videoiframe').attr('src', timewisesrc);
+   $('#videoFrame').fadeIn(500); 
+}
+
 function playMYND(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -355,6 +413,7 @@ function playMYND(num)
 
 function playMYSA1(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -388,6 +447,7 @@ function playMYSA1(num)
 
 function playMYSA2(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -426,6 +486,7 @@ function playMYSA2(num)
 
 function playMYNSD()
 { 
+  clickSound.play();
   BGM.pause();
   $('#videoFrameText').text("NSD IN MAKING");
   $('#videoiframe').attr('src', mynsdsrc);
@@ -434,6 +495,7 @@ function playMYNSD()
 
 function playMYLead()
 {
+  clickSound.play();
   BGM.pause();
   $('#videoFrameText').text("LEAD PROGRAMS");
   $('#videoiframe').attr('src', myleadsrc);
@@ -442,6 +504,7 @@ function playMYLead()
 
 function playMYMoveUp(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -467,6 +530,7 @@ function playMYMoveUp(num)
 
 function playMYCar(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -498,6 +562,7 @@ function playMYCar(num)
 
 function playSGLead()
 {
+  clickSound.play();
   BGM.pause();
   $('#videoFrameText').text("LEAD PROGRAM");
   $('#videoiframe').attr('src', sgleadsrc);
@@ -506,6 +571,7 @@ function playSGLead()
 
 function playSGND()
 {
+  clickSound.play();
   BGM.pause();
   $('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
   $('#videoiframe').attr('src', sgleadsrc);
@@ -514,6 +580,7 @@ function playSGND()
 
 function playSGMoveUp(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -533,6 +600,7 @@ function playSGMoveUp(num)
 
 function playSGSA1(num)
 { 
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -561,6 +629,7 @@ function playSGSA1(num)
 
 function playSGSA2(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -599,6 +668,7 @@ function playSGSA2(num)
 
 function playAuditorium(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
@@ -648,6 +718,7 @@ function playAuditorium(num)
 
 function playNSD(num)
 {
+  clickSound.play();
   BGM.pause();
   switch(num)
   {
