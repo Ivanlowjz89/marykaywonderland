@@ -288,7 +288,7 @@ $('#appiframe').attr('src', nsdsrc);
 $('#appFrame').fadeIn(500);
 }
 
-function openAuditorium()
+async function openAuditorium()
 {
 clickSound.play();
 var checkUserType = await checkUser();
@@ -787,7 +787,7 @@ function playNSD(num)
   }
 }
 
-function openQuote1()
+async function openQuote1()
 {
 let checkIn = await checkInPoint(1);
 clickSound.play();
@@ -795,7 +795,7 @@ $('#quoteImage').attr('src', quote1);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote2()
+async function openQuote2()
 {
 let checkIn = await checkInPoint(2);
 clickSound.play();
@@ -803,7 +803,7 @@ $('#quoteImage').attr('src', quote2);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote3()
+async function openQuote3()
 {
 let checkIn = await checkInPoint(3);
 clickSound.play();
@@ -811,7 +811,7 @@ $('#quoteImage').attr('src', quote3);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote4()
+async function openQuote4()
 {
 let checkIn = await checkInPoint(4);
 clickSound.play();
@@ -819,7 +819,7 @@ $('#quoteImage').attr('src', quote4);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote5()
+async function openQuote5()
 {
 let checkIn = await checkInPoint(5);
 clickSound.play();
@@ -827,7 +827,7 @@ $('#quoteImage').attr('src', quote5);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote6()
+async function openQuote6()
 {
 let checkIn = await checkInPoint(6);
 clickSound.play();
@@ -835,7 +835,7 @@ $('#quoteImage').attr('src', quote6);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote7()
+async function openQuote7()
 {
 let checkIn = await checkInPoint(7);
 clickSound.play();
@@ -843,7 +843,7 @@ $('#quoteImage').attr('src', quote7);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote8()
+async function openQuote8()
 {
 let checkIn = await checkInPoint(8);
 clickSound.play();
@@ -851,7 +851,7 @@ $('#quoteImage').attr('src', quote8);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote9()
+async function openQuote9()
 {
 let checkIn = await checkInPoint(9);
 clickSound.play();
@@ -859,7 +859,7 @@ $('#quoteImage').attr('src', quote9);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote10()
+async function openQuote10()
 {
 let checkIn = await checkInPoint(10);
 clickSound.play();
@@ -867,7 +867,7 @@ $('#quoteImage').attr('src', quote10);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote11()
+async function openQuote11()
 {
 let checkIn = await checkInPoint(11);
 clickSound.play();
@@ -875,7 +875,7 @@ $('#quoteImage').attr('src', quote11);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote12()
+async function openQuote12()
 {
 let checkIn = await checkInPoint(12);
 clickSound.play();
@@ -883,7 +883,7 @@ $('#quoteImage').attr('src', quote12);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote13()
+async function openQuote13()
 {
 let checkIn = await checkInPoint(13);
 clickSound.play();
@@ -891,7 +891,7 @@ $('#quoteImage').attr('src', quote13);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote14()
+async function openQuote14()
 {
 let checkIn = await checkInPoint(14);
 clickSound.play();
@@ -899,7 +899,7 @@ $('#quoteImage').attr('src', quote14);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote15()
+async function openQuote15()
 {
 let checkIn = await checkInPoint(15);
 clickSound.play();
@@ -907,7 +907,7 @@ $('#quoteImage').attr('src', quote15);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote16()
+async function openQuote16()
 {
 let checkIn = await checkInPoint(16);
 clickSound.play();
@@ -915,7 +915,7 @@ $('#quoteImage').attr('src', quote16);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote17()
+async function openQuote17()
 {
 let checkIn = await checkInPoint(17);
 clickSound.play();
@@ -923,7 +923,7 @@ $('#quoteImage').attr('src', quote17);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote18()
+async function openQuote18()
 {
 let checkIn = await checkInPoint(18);
 clickSound.play();
@@ -931,7 +931,7 @@ $('#quoteImage').attr('src', quote18);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote19()
+async function openQuote19()
 {
 let checkIn = await checkInPoint(19);
 clickSound.play();
@@ -939,7 +939,7 @@ $('#quoteImage').attr('src', quote19);
 $('#imageFrame').fadeIn(500);
 }
 
-function openQuote20()
+async function openQuote20()
 {
 let checkIn = await checkInPoint(20);
 clickSound.play();
