@@ -41,6 +41,7 @@ var ppsrc = "https://www.marykaymysgcc2021.com/apps/ProductPavilion";
 var recognitionsrc = "https://www.marykaymysgcc2021.com/apps/Recognition";
 var luckydrawsrc = "https://www.marykaymysgcc2021.com/apps/LuckyDraw";
 var excitementsrc = "https://www.marykaymysgcc2021.com/apps/Excitement";
+var mmsrc = "https://www.marykaymysgcc2021.com/apps/MickMock";
 
 //Auditorium
 var auditorium1src = "https://player.vimeo.com/video/528128632";
@@ -234,8 +235,10 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 
 function openMickMock()
 {
-  clickSound.play();
-  console.log("Open Mick Mock");
+clickSound.play();
+$('#appFrameText').text("MICK MOCK");
+$('#appiframe').attr('src', mmsrc);
+$('#appFrame').fadeIn(500);
   
 }
 
