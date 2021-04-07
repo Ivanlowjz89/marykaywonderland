@@ -32,12 +32,15 @@ else
 
 }
 
-//Set unique ID for videos.
+//Apps
 var auditoriumIBCsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumIBC";
 var auditoriumPublicsrc = "https://staging.marykaymysgcc2021.com/apps/AuditoriumPublic";
 var universitysrc = "https://staging.marykaymysgcc2021.com/apps/University";
 var nsdsrc = "https://staging.marykaymysgcc2021.com/apps/NSD";
+var ppsrc = "https://staging.marykaymysgcc2021.com/apps/ProductPavilion";
+var recognitionsrc = "https://staging.marykaymysgcc2021.com/apps/Recognition";
 
+//Auditorium
 var auditorium1src = "https://player.vimeo.com/video/528128632";
 var auditorium2src = "https://player.vimeo.com/video/528129055";
 var auditorium3src = "https://player.vimeo.com/video/528171287";
@@ -47,6 +50,7 @@ var auditorium6src = "https://player.vimeo.com/video/528178378";
 var auditorium7src = "https://player.vimeo.com/video/528676498";
 var auditorium8src = "https://player.vimeo.com/video/528675150";
 
+//NSD
 var nsd1src = "https://www.youtube.com/embed/PLK5G6njtO8";
 var nsd2src = "https://www.youtube.com/embed/hEx0_O3BooA";
 var nsd3src = "https://www.youtube.com/embed/44vaEwj6UWM";
@@ -55,55 +59,56 @@ var nsd5src = "https://www.youtube.com/embed/CXz8Wx9V-3w";
 var nsd6src = "https://www.youtube.com/embed/k6IaeQbLfmc";
 var nsd7src = "https://www.youtube.com/embed/_Wyfv6DRabs";
 
+//Recognition
 var mynd1src = "https://player.vimeo.com/video/533437671";
 var mynd2src = "https://player.vimeo.com/video/533440173";
 var mynd3src = "https://player.vimeo.com/video/533440078";
-
 var mysa1src = "https://player.vimeo.com/video/533439922";
 var mysa2src = "https://player.vimeo.com/video/533439968";
 var mysa3src = "https://player.vimeo.com/video/533439183";
 var mysa4src = "https://player.vimeo.com/video/533439654";
 var mysa5src = "https://player.vimeo.com/video/533441468";
-
 var mysaot1src = "https://player.vimeo.com/video/533446851";
 var mysaot2src = "https://player.vimeo.com/video/533447137";
 var mysaot3src = "https://player.vimeo.com/video/533447621";
 var mysaot4src = "https://player.vimeo.com/video/533445693";
 var mysaot5src = "https://player.vimeo.com/video/533446224";
 var mysaot6src = "https://player.vimeo.com/video/533446607";
-
 var mynsdsrc = "https://player.vimeo.com/video/533443805";
-
 var mymoveup1src = "https://player.vimeo.com/video/533444435";
 var mymoveup2src = "https://player.vimeo.com/video/533445370";
 var mymoveup3src = "https://player.vimeo.com/video/533444194";
-
 var myleadsrc = "https://player.vimeo.com/video/533448900";
-
 var mycar1src = "https://player.vimeo.com/video/533435967";
 var mycar2src = "https://player.vimeo.com/video/533436052";
 var mycar3src = "https://player.vimeo.com/video/533436112";
 var mycar4src = "https://player.vimeo.com/video/533436148";
-
 var sgndsrc = "https://player.vimeo.com/video/533449849";
-
 var sgsa1src = "https://player.vimeo.com/video/533450798";
 var sgsa2src = "https://player.vimeo.com/video/533450923";
 var sgsa3src = "https://player.vimeo.com/video/533450659";
 var sgsa4src = "https://player.vimeo.com/video/533450735";
-
 var sgsaot1src = "https://player.vimeo.com/video/533446851";
 var sgsaot2src = "https://player.vimeo.com/video/533447137";
 var sgsaot3src = "https://player.vimeo.com/video/533451025";
 var sgsaot4src = "https://player.vimeo.com/video/533450403";
 var sgsaot5src = "https://player.vimeo.com/video/533450493";
 var sgsaot6src = "https://player.vimeo.com/video/533450574";
-
 var sgmoveup1src = "https://player.vimeo.com/video/533450350";
 var sgmoveup2src = "https://player.vimeo.com/video/533450273";
-
 var sgleadsrc = "https://player.vimeo.com/video/533449791";
 
+//Product Gallery
+var luissrc = "https://player.vimeo.com/video/533453979";
+var micellarsrc = "";
+var illumineasrc = "";
+var timewisesrc = "";
+var lipglosssrc = "";
+var wmk1src = "";
+var wmk2src = "";
+var wmk3src = "";
+
+//Quotes
 var quote1 = "images/MKFacts-01.jpg";
 var quote2 = "images/MKFacts-02.jpg";
 var quote3 = "images/MKFacts-03.jpg";
@@ -248,16 +253,18 @@ function openMickMock()
 
 function openRecognition()
 {
-  clickSound.play();
-  console.log("Open Recognition");  
-  
+clickSound.play();
+$('#appFrameText').text("MARY KAY RECOGNITION");
+$('#appiframe').attr('src', recognitionsrc);
+$('#appFrame').fadeIn(500);
 }
 
 function openProductGallery()
 {
-  clickSound.play();
-  console.log("Open Product Gallery");  
-  
+clickSound.play();
+$('#appFrameText').text("PRODUCT GALLERY");
+$('#appiframe').attr('src', recognitionsrc);
+$('#appFrame').fadeIn(500);
 }
 
 function openLuckyDraw()
@@ -271,16 +278,14 @@ function openExcitement()
 {
   clickSound.play();
   console.log("Open Excitement");  
-  
 }
 
 function openUniversity()
 {
 clickSound.play();
-$('#appFrameText').text("UNIVERSITY");
+$('#appFrameText').text("MARY KAY UNIVERSITY");
 $('#appiframe').attr('src', universitysrc);
 $('#appFrame').fadeIn(500);
-  
 }
 
 function openNSD()
@@ -289,16 +294,14 @@ clickSound.play();
 $('#appFrameText').text("NSD BUSINESS SUITES");
 $('#appiframe').attr('src', nsdsrc);
 $('#appFrame').fadeIn(500);
-  
 }
 
 function openAuditorium()
 {
-  clickSound.play();
+clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumIBCsrc);
 $('#appFrame').fadeIn(500);
-  
 }
 
 function openAuditoriumIBC()
@@ -307,7 +310,6 @@ clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumIBCsrc);
 $('#appFrame').fadeIn(500);
-
 }
 
 function openAuditoriumPublic()
@@ -316,12 +318,18 @@ clickSound.play();
 $('#appFrameText').text("AUDITORIUM");
 $('#appiframe').attr('src', auditoriumPublicsrc);
 $('#appFrame').fadeIn(500);
+}
 
+function playLuis()
+{
+   BGM.pause();
+    $('#videoFrameText').text("LUIS CASCO, MARY KAY GLOBAL BRAND AMBASSADOR");
+    $('#videoiframe').attr('src', luissrc);
+    $('#videoFrame').fadeIn(500);
 }
 
 function playMYND(num)
 {
-  
   BGM.pause();
   switch(num)
   {
@@ -343,7 +351,6 @@ function playMYND(num)
       $('#videoFrame').fadeIn(500);
       break;
   }
-  
 }
 
 function playMYSA1(num)
@@ -495,7 +502,6 @@ function playSGLead()
   $('#videoFrameText').text("LEAD PROGRAM");
   $('#videoiframe').attr('src', sgleadsrc);
   $('#videoFrame').fadeIn(500);
-  
 }
 
 function playSGND()
@@ -511,7 +517,6 @@ function playSGMoveUp(num)
   BGM.pause();
   switch(num)
   {
-    
       case 1:
       $('#videoFrameText').text("TEAM LEADER");
       $('#videoiframe').attr('src', sgmoveup1src);
@@ -522,10 +527,8 @@ function playSGMoveUp(num)
       $('#videoFrameText').text("DIRECTOR IN QUALIFICATION");
       $('#videoiframe').attr('src', sgmoveup2src);
       $('#videoFrame').fadeIn(500);
-      break;
-      
+      break; 
   }
-  
 }
 
 function playSGSA1(num)
@@ -554,7 +557,6 @@ function playSGSA1(num)
       $('#videoFrame').fadeIn(500);
       break;
   }
-  
 }
 
 function playSGSA2(num)
@@ -592,7 +594,6 @@ function playSGSA2(num)
       $('#videoiframe').attr('src', sgsaot6src);
       $('#videoFrame').fadeIn(500);
       break;
-      
   }
 }
 
@@ -601,44 +602,43 @@ function playAuditorium(num)
   BGM.pause();
   switch(num)
   {
-    
     case 1 :
-      $('#videoFrameText').text("PRISCA SUSELLA TANIS");
+      $('#videoFrameText').text("FOUND MY HAPPINESS THROUGH BEAUTY");
       $('#videoiframe').attr('src', auditorium1src);
       $('#videoFrame').fadeIn(500);
     break;
     case 2 :
-      $('#videoFrameText').text("SAYYIDATUL AFFDA BINTI ZAINUDIN");
+      $('#videoFrameText').text("MAKING MY BUSINESS A REAL BUSINESS");
       $('#videoiframe').attr('src', auditorium2src);
       $('#videoFrame').fadeIn(500);
     break;
     case 3 :
-      $('#videoFrameText').text("FARISHA DANIA BT ZAINAL ARIFF");
+      $('#videoFrameText').text("DARE TO DREAM AND CHANGE MY LIFE");
       $('#videoiframe').attr('src', auditorium3src);
       $('#videoFrame').fadeIn(500);
     break;
     case 4:
-      $('#videoFrameText').text("INTAN FAZLIANA BINTI FAUZI");
+      $('#videoFrameText').text("DRIVING MY PINK WHEELS TO SUCCESS");
       $('#videoiframe').attr('src', auditorium4src);
       $('#videoFrame').fadeIn(500);
     break;
     case 5 :
-      $('#videoFrameText').text("JESSICA JANUARIUS");
+      $('#videoFrameText').text("STRETCHING BEYOND MY LIMITS");
       $('#videoiframe').attr('src', auditorium5src);
       $('#videoFrame').fadeIn(500);
     break;
     case 6 :
-      $('#videoFrameText').text("NURULHARJAH BT HUSSIN");
+      $('#videoFrameText').text("GROWING MY UNIT DURING PANDEMIC");
       $('#videoiframe').attr('src', auditorium6src);
       $('#videoFrame').fadeIn(500);
     break;
     case 7 :
-      $('#videoFrameText').text("QISTINA AMIRA BINTI IDRIS");
+      $('#videoFrameText').text("START SOMETHING BEAUTIFUL");
       $('#videoiframe').attr('src', auditorium7src);
       $('#videoFrame').fadeIn(500);
     break;
     case 8 :
-      $('#videoFrameText').text("SUFI SYAZWANI");
+      $('#videoFrameText').text("START SOMETHING BEAUTIFUL");
       $('#videoiframe').attr('src', auditorium8src);
       $('#videoFrame').fadeIn(500);
     break;
@@ -651,7 +651,6 @@ function playNSD(num)
   BGM.pause();
   switch(num)
   {
-    
     case 1 :
       $('#videoFrameText').text("NAFISAH OMAR");
       $('#videoiframe').attr('src', nsd1src);
