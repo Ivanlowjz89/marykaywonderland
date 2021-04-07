@@ -221,8 +221,6 @@ clickSound.play();
 $('#menuFrame').fadeOut(500);
 });
 
-}
-
 //VH
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
