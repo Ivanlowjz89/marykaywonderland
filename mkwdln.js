@@ -10,7 +10,7 @@ async function initWonderland()
 {
 try{
 var checkUserType = await checkUser();
-  userType = checkUserType.user;
+  userType = checkUserType.type;
 }catch(e){console.log(e);}
   
 try{
