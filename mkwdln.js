@@ -234,18 +234,12 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 });
 
-window.addEventListener('focus',()=>{
-  
-  BGM.play();
-  console.log("Hi");
-  
-});
-                        
-window.addEventListener('blur',()=>{
-  
-  BGM.pause();
-  console.log("Bye");
-  
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+    BGM.play();
+  } else {
+    BGM.pause();
+  }
 });
 
 openMickMock();
