@@ -17,7 +17,7 @@ else
 {
 alert("Error fetching your photo! Please refresh and try again!"); 
 }
-}catch(e){alert(e);}
+}catch(e){console.log(e);}
 
 try{  
 var getAvatarImage = await checkAvatar();
@@ -31,7 +31,7 @@ else
 {
 alert("Error fetching your avatar! Please refresh and try again!"); 
 }
-}catch(e){alert(e);}
+}catch(e){console.log(e);}
 
 }
 
@@ -234,14 +234,14 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 });
 
-document.addEventListener('pageshow',()=>{
+window.addEventListener('pageshow',()=>{
   
   BGM.play();
   console.log("Hi");
   
 });
                         
-document.addEventListener('pagehide',()=>{
+window.addEventListener('pagehide',()=>{
   
   BGM.pause();
   console.log("Bye");
@@ -318,7 +318,7 @@ else
 {
 openAuditoriumPublic();
 }
-}catch(e){alert(e);}
+}catch(e){console.log(e);}
 }
 
 function openAuditoriumIBC()
