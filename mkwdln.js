@@ -262,7 +262,7 @@ function openRecognition()
   clickSound.play();
   if(userType == "user")
   {
-    $('#appFrameText').text("RECOGNITION");
+    $('#appFrameText').text("RECOGNITIONS");
     $('#appiframe').attr('src', recognitionsrc);
     $('#appFrame').fadeIn(500);
   }
@@ -549,7 +549,7 @@ function playMYLead()
 {
 clickSound.play();
 BGM.pause();
-$('#videoFrameText').text("LEAD PROGRAMS");
+$('#videoFrameText').text("LEAD PROGRAM");
 $('#videoiframe').attr('src', myleadsrc);
 $('#videoFrame').fadeIn(500);
 }
