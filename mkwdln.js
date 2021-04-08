@@ -237,12 +237,14 @@ $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 window.addEventListener('pageshow',()=>{
   
   BGM.play();
+  console.log("Hi");
   
 });
                         
 window.addEventListener('pagehide',()=>{
   
   BGM.pause();
+  console.log("Bye");
   
 });
 
