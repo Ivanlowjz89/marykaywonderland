@@ -148,6 +148,10 @@ var quote18 = "images/MKFacts-18.jpg";
 var quote19 = "images/MKFacts-19.jpg";
 var quote20 = "images/MKFacts-20.jpg";
 
+var mute = false;
+var unmuteImg = "images/Unmute.png";
+var muteImg = "images/Mute.png";
+
 //Avatar
 $('#speechBubble').click(function()
 {
@@ -175,6 +179,23 @@ a.download = 'myavatar.jpg';
 a.dataset.downloadurl = [MIME_TYPE, a.download, a.href].join(':');
 a.click();
 });
+
+$('#muteButton').click(function()
+{
+ 
+    if(mute)
+    {
+      $('#muteButton').attr('src', muteImg);
+      BGM.play();
+      mute = false;
+    }
+  else
+  {
+    $('#muteButton').attr('src', unmuteImg);
+    BGM.pause();
+    mute = true;
+  }
+}
 
 //Photobooth
 $('#buttonPhotobooth').click(function()
@@ -795,7 +816,7 @@ $('#videoiframe').attr('src', nsd4src);
 $('#videoFrame').fadeIn(500);
 break;
 case 5 :
-$('#videoFrameText').text("SUHAIDAH SHEILA");
+$('#videoFrameText').text("SUHAIDA SARIF");
 $('#videoiframe').attr('src', nsd5src);
 $('#videoFrame').fadeIn(500);
 break;
