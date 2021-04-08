@@ -242,8 +242,6 @@ document.addEventListener("visibilitychange", function() {
   }
 });
 
-openMickMock();
-
 function openMickMock()
 {
 clickSound.play();
