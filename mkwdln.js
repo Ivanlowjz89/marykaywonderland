@@ -2,11 +2,17 @@ var BGM = document.getElementById('bgm');
 var clickSound = document.getElementById('clickSound');
 var avatarPhoto = "";
 var avatarImageContainer = "";
+var userType = "";
 
-initAvatars();
+initWonderland();
 
-async function initAvatars()
+async function initWonderland()
 {
+try{
+var checkUserType = await checkUser();
+  userType = checkUserType.user;
+}catch(e){console.log(e);}
+  
 try{
 var getAvatarPhoto = await checkPhotos();
 if(getAvatarPhoto.photos != null)
@@ -253,10 +259,13 @@ $('#appFrame').fadeIn(500);
 
 function openRecognition()
 {
-clickSound.play();
-$('#appFrameText').text("RECOGNITION");
-$('#appiframe').attr('src', recognitionsrc);
-$('#appFrame').fadeIn(500);
+  clickSound.play();
+  if(userType == "user")
+  {
+    $('#appFrameText').text("RECOGNITION");
+    $('#appiframe').attr('src', recognitionsrc);
+    $('#appFrame').fadeIn(500);
+  }
 }
 
 function openProductGallery()
@@ -302,9 +311,8 @@ $('#appFrame').fadeIn(500);
 async function openAuditorium()
 {
 clickSound.play();
-try{
-var checkUserType = await checkUser();
-if(checkUserType.type == "user")
+
+if(userType == "user")
 {
 openAuditoriumIBC();
 }
@@ -312,7 +320,6 @@ else
 {
 openAuditoriumPublic();
 }
-}catch(e){console.log(e);}
 }
 
 function openAuditoriumIBC()
