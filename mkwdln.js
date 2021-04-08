@@ -168,10 +168,10 @@ $('#menuFrame').fadeIn(500);
 $('#buttonDownloadAvatar').click(function()
 {
 clickSound.play();
-let MIME_TYPE = "image/png";
+let MIME_TYPE = "image/jpeg";
 let a = document.createElement('a');
 a.href = avatarPhoto;
-a.download = 'myavatar.png';
+a.download = 'myavatar.jpg';
 a.dataset.downloadurl = [MIME_TYPE, a.download, a.href].join(':');
 a.click();
 });
