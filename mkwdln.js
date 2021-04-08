@@ -195,7 +195,7 @@ $('#muteButton').click(function()
     BGM.pause();
     mute = true;
   }
-}
+});
 
 //Photobooth
 $('#buttonPhotobooth').click(function()
