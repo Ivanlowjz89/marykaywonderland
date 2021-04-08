@@ -211,6 +211,13 @@ clickSound.play();
 window.open("https://www.marykaymysgcc2021.com/users/sign_out", "_self");
 });
 
+//Live Stream
+$('#livestreamPopUp').click(function()
+{
+clickSound.play();
+window.open("https://www.marykaymysgcc2021.com/live-streaming", "_self");
+});
+
 //Audio
 $('#playAudioButton').click(function()
 {
