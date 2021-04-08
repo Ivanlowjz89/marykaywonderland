@@ -511,7 +511,7 @@ $('#videoiframe').attr('src', mysa4src);
 $('#videoFrame').fadeIn(500);
 break;
 case 5:
-$('#videoFrameText').text("COE & TDT");
+$('#videoFrameText').text("CIRCLE OF EXCELLENCE 411K");
 $('#videoiframe').attr('src', mysa5src);
 $('#videoFrame').fadeIn(500);
 break;
@@ -550,7 +550,7 @@ $('#videoiframe').attr('src', mysaot3src);
 $('#videoFrame').fadeIn(500);
 break;
 case 6:
-$('#videoFrameText').text("COE & TDT");
+$('#videoFrameText').text("CIRCLE OF EXCELLENCE 411K");
 $('#videoiframe').attr('src', mysaot6src);
 $('#videoFrame').fadeIn(500);
 break;
@@ -732,7 +732,7 @@ $('#videoiframe').attr('src', sgsaot3src);
 $('#videoFrame').fadeIn(500);
 break;
 case 6:
-$('#videoFrameText').text("COE & TDT");
+$('#videoFrameText').text("CIRCLE OF EXCELLENCE 411K");
 $('#videoiframe').attr('src', sgsaot6src);
 $('#videoFrame').fadeIn(500);
 break;
