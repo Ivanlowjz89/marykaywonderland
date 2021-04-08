@@ -7,7 +7,7 @@ initAvatars();
 
 async function initAvatars()
 {
-
+try{
 var getAvatarPhoto = await checkPhotos();
 if(getAvatarPhoto.photos != null)
 {
@@ -17,7 +17,9 @@ else
 {
 alert("Error fetching your photo! Please refresh and try again!"); 
 }
+}catch(e){alert(e);}
 
+try{  
 var getAvatarImage = await checkAvatar();
 
 if(getAvatarImage.avatar != null)
@@ -29,6 +31,7 @@ else
 {
 alert("Error fetching your avatar! Please refresh and try again!"); 
 }
+}catch(e){alert(e);}
 
 }
 
@@ -231,13 +234,13 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 });
 
-window.addEventListener('focus',()=>{
+window.addEventListener('pageshow',()=>{
   
   BGM.play();
   
 });
                         
-window.addEventListener('blur',()=>{
+window.addEventListener('pagehide',()=>{
   
   BGM.pause();
   
@@ -303,6 +306,7 @@ $('#appFrame').fadeIn(500);
 async function openAuditorium()
 {
 clickSound.play();
+try{
 var checkUserType = await checkUser();
 if(checkUserType.type == "user")
 {
@@ -312,6 +316,7 @@ else
 {
 openAuditoriumPublic();
 }
+}catch(e){alert(e);}
 }
 
 function openAuditoriumIBC()
