@@ -154,7 +154,7 @@ $('#speechBubble').click(function()
 clickSound.play();
 $('#speechBubble').fadeOut(500);
 $('#menuFrame').fadeIn(500);
-$('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
+//$('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 });
 
 $('#avatarImage').click(function()
