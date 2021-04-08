@@ -234,14 +234,14 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 $('#menuBlock').css("width", $('#menuBlock').height() * 1.898);
 });
 
-window.addEventListener('pageshow',()=>{
+document.addEventListener('pageshow',()=>{
   
   BGM.play();
   console.log("Hi");
   
 });
                         
-window.addEventListener('pagehide',()=>{
+document.addEventListener('pagehide',()=>{
   
   BGM.pause();
   console.log("Bye");
