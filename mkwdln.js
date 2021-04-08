@@ -235,13 +235,13 @@ window.addEventListener('focus',()=>{
   
   BGM.play();
   
-}
+});
                         
 window.addEventListener('blur',()=>{
   
   BGM.pause();
   
-}
+});
 
 function openMickMock()
 {
