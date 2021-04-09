@@ -203,7 +203,7 @@ $('#muteButton').click(function()
 $('#opportunityPopUp').click(function()
 {
 clickSound.play();
-window.open("https://www.youtube.com/watch?v=BA3-dv3Bsws", "_blank");
+window.open("https://www.youtube.com/watch?v=x2DEtLH2jXY", "_blank");
 });
 
 //Photobooth
