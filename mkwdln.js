@@ -181,6 +181,7 @@ a.dataset.downloadurl = [MIME_TYPE, a.download, a.href].join(':');
 a.click();
 });
 
+//Audio
 $('#muteButton').click(function()
 {
  
@@ -196,6 +197,13 @@ $('#muteButton').click(function()
     BGM.pause();
     mute = true;
   }
+});
+
+//Opportunities
+$('#opportunityPopUp').click(function()
+{
+clickSound.play();
+window.open("https://www.youtube.com/watch?v=BA3-dv3Bsws", "_self");
 });
 
 //Photobooth
