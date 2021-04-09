@@ -149,6 +149,7 @@ var quote19 = "images/MKFacts-19.jpg";
 var quote20 = "images/MKFacts-20.jpg";
 
 var mute = false;
+var videoMute = false;
 var unmuteImg = "images/Unmute.png";
 var muteImg = "images/Mute.png";
 
@@ -234,7 +235,8 @@ BGM.play();
 $('#closeButtonVideo').click(function()
 {	
 clickSound.play();
-BGM.play();
+if(!mute){BGM.play();}
+videoMute = false;
 $('#videoiframe').attr('src', 'about:blank');
 $('#videoFrame').fadeOut(500);
 });
@@ -270,8 +272,12 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 document.addEventListener("visibilitychange", function() {
   if (document.visibilityState === 'visible') {
+    if(!mute && !videoMute)
+    {
     BGM.play();
+    }
   } else {
+    
     BGM.pause();
   }
 });
@@ -368,6 +374,7 @@ function playLD(num)
 {
 clickSound.play();
 BGM.pause();
+videoMute = true;
 switch(num)
 {
 case 1:
@@ -399,6 +406,7 @@ break;
 function playLuis()
 {
 clickSound.play();
+videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("LUIS CASCO, MARY KAY GLOBAL BRAND AMBASSADOR");
 $('#videoiframe').attr('src', luissrc);
@@ -408,6 +416,7 @@ $('#videoFrame').fadeIn(500);
 function playMicellarWater()
 { 
 clickSound.play();
+videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("MICELLAR WATER");
 $('#videoiframe').attr('src', micellarsrc);
@@ -417,6 +426,7 @@ $('#videoFrame').fadeIn(500);
 function playIlluminea()
 { 
 clickSound.play();
+videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("ILLUMINEA EDP");
 $('#videoiframe').attr('src', illumineasrc);
@@ -426,6 +436,7 @@ $('#videoFrame').fadeIn(500);
 function playWMK(num)
 { 
 clickSound.play();
+videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -450,6 +461,7 @@ break;
 function playLipGloss()
 {
   clickSound.play();
+  videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("UNLIMITED LIP GLOSS");
 $('#videoiframe').attr('src', lipglosssrc);
@@ -459,6 +471,7 @@ $('#videoFrame').fadeIn(500);
 function playTimeWise()
 {
   clickSound.play();
+  videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("TIMEWISE REPLENISHING SERUM C + E");
 $('#videoiframe').attr('src', timewisesrc);
@@ -468,6 +481,7 @@ $('#videoFrame').fadeIn(500);
 function playMYND(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -494,6 +508,7 @@ break;
 function playMYSA1(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -528,6 +543,7 @@ break;
 function playMYSA2(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -567,6 +583,7 @@ break;
 function playMYNSD()
 { 
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("NSD IN MAKING");
 $('#videoiframe').attr('src', mynsdsrc);
@@ -576,6 +593,7 @@ $('#videoFrame').fadeIn(500);
 function playMYLead()
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("LEAD PROGRAM");
 $('#videoiframe').attr('src', myleadsrc);
@@ -585,6 +603,7 @@ $('#videoFrame').fadeIn(500);
 function playMYMoveUp(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -611,6 +630,7 @@ break;
 function playMYCar(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -643,6 +663,7 @@ break;
 function playSGLead()
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("LEAD PROGRAM");
 $('#videoiframe').attr('src', sgleadsrc);
@@ -652,6 +673,7 @@ $('#videoFrame').fadeIn(500);
 function playSGND()
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 $('#videoFrameText').text("NEW SALES DIRECTOR DEBUT");
 $('#videoiframe').attr('src', sgleadsrc);
@@ -661,6 +683,7 @@ $('#videoFrame').fadeIn(500);
 function playSGMoveUp(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -681,6 +704,7 @@ break;
 function playSGSA1(num)
 { 
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -710,6 +734,7 @@ break;
 function playSGSA2(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -749,6 +774,7 @@ break;
 function playAuditorium(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
@@ -799,6 +825,7 @@ break;
 function playNSD(num)
 {
 clickSound.play();
+  videoMute = true;
 BGM.pause();
 switch(num)
 {
