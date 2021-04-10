@@ -61,6 +61,9 @@ var auditorium5src = "https://player.vimeo.com/video/528176359";
 var auditorium6src = "https://player.vimeo.com/video/528178378";
 var auditorium7src = "https://player.vimeo.com/video/528676498";
 var auditorium8src = "https://player.vimeo.com/video/528675150";
+var auditorium9src = "https://player.vimeo.com/video/535196157";
+var auditorium10src = "https://player.vimeo.com/video/535195119";
+var auditorium11src = "https://player.vimeo.com/video/535195639";
 
 //NSD
 var nsd1src = "https://www.youtube.com/embed/PLK5G6njtO8";
@@ -197,6 +200,13 @@ $('#muteButton').click(function()
     BGM.pause();
     mute = true;
   }
+});
+
+//Rewatch
+$('#rewatchPopUp').click(function()
+{
+clickSound.play();
+window.open("https://vimeo.com/533460357/2e21477abb", "_blank");
 });
 
 //Opportunities
@@ -826,7 +836,21 @@ $('#videoFrameText').text("START SOMETHING BEAUTIFUL");
 $('#videoiframe').attr('src', auditorium8src);
 $('#videoFrame').fadeIn(500);
 break;
-
+case 9:
+$('#videoFrameText').text("SUCCESS STORIES");
+$('#videoiframe').attr('src', auditorium9src);
+$('#videoFrame').fadeIn(500);
+break;
+case 10 :
+$('#videoFrameText').text("SUCCESS STORIES");
+$('#videoiframe').attr('src', auditorium10src);
+$('#videoFrame').fadeIn(500);
+break;
+case 11 :
+$('#videoFrameText').text("SUCCESS STORIES");
+$('#videoiframe').attr('src', auditorium11src);
+$('#videoFrame').fadeIn(500);
+break;
 }
 }
 
