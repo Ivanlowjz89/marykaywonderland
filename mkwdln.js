@@ -15,7 +15,7 @@ var checkUserType = await checkUser();
   
 if(userType == "user")
 {
-$('#rewatchPopUp').attr('display','block');
+$('#rewatchPopUp').show();
 }
    
 try{
