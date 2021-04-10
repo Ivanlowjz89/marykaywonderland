@@ -13,6 +13,11 @@ var checkUserType = await checkUser();
   userType = checkUserType.type;
 }catch(e){console.log(e);}
   
+if(userType == "user)
+{
+$('#rewatchPopUp').attr('display','block');
+}
+   
 try{
 var getAvatarPhoto = await checkPhotos();
 if(getAvatarPhoto.photos != null)
