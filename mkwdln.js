@@ -13,7 +13,7 @@ var checkUserType = await checkUser();
   userType = checkUserType.type;
 }catch(e){console.log(e);}
   
-if(userType == "user)
+if(userType == "user")
 {
 $('#rewatchPopUp').attr('display','block');
 }
