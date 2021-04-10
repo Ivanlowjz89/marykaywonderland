@@ -46,6 +46,9 @@ alert("Error fetching your avatar! Please refresh and try again!");
 
 }
 
+//Rewatch
+var rewatchsrc = "https://player.vimeo.com/video/533460357";
+
 //Apps
 var auditoriumIBCsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumIBC";
 var auditoriumPublicsrc = "https://www.marykaymysgcc2021.com/apps/AuditoriumPublic";
@@ -211,7 +214,10 @@ $('#muteButton').click(function()
 $('#rewatchPopUp').click(function()
 {
 clickSound.play();
-window.open("https://vimeo.com/533460357/2e21477abb", "_blank");
+BGM.pause();
+$('#videoFrameText').text("REWATCH MORNING SESSION");
+$('#videoiframe').attr('src', rewatchsrc);
+$('#videoFrame').fadeIn(500);
 });
 
 //Opportunities
